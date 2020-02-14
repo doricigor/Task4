@@ -1,0 +1,42 @@
+// Header
+
+// Header Top
+.header__top {
+    background-color: $color-primary-light;
+}
+
+.header__topContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__company {
+    font-size: 14px;
+    color: $light-blue;
+    padding: 6px 9px 8px 9px;
+    letter-spacing: .6px;
+}
+
+// Header bottom
+
+.header__bottom {
+    background-image: url(/img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 17px;
+}
+
+.header__nav {
+    background-color: transparent;
+    border-bottom: .5px solid $color-primary-light;
+}
+
+.header__navContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__finder {
+    padding-top: 10px;
+}

@@ -1,0 +1,52 @@
+// Main class for btn
+.btn {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: $white;
+        display: inline-block;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        background-color: $color-primary-light;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+// Btn classes
+.btn--finder {
+    height: 50px;
+    padding: 15px 20px;
+    width: 240px;
+    margin-left: 68px;
+
+    &:hover {
+        // TODO
+    }
+}
+
+.btn--info {
+    margin-left: 37px;
+    padding: 10px 17px;
+}
+
+// Class for img/icons of btns
+.btn__boxes {
+    margin-top: -5px;
+}
+
+
+// Btn classes for position of icon
+.btn__icon--left {
+    float: left;
+    margin-right: 17px;
+}
+
+.btn__icon--right {
+    float: right;
+    margin-left: 10px;
+}

@@ -1,0 +1,124 @@
+// SubNav
+
+.subNav {
+    list-style: none;
+    display: flex;
+    padding: 3px 10px 0 10px;
+}
+
+.subNav__item {
+    letter-spacing: .4px;
+
+    &:not(:last-child) {
+        padding: 0 22px 0 3px;
+    }
+    
+}
+
+.subNav__link--res {
+    position: relative;
+    margin-right: 15px;
+
+    &::after {
+        content: '\f078';
+        position: absolute;
+        top: 4px;
+        right: -16px;
+        font-family: $icons;
+        font-weight: 900;
+        font-size: 9px;
+    }
+}
+
+.subNav__link--acc {
+    position: relative;
+
+    &::after {
+        content: '\f078';
+        position: absolute;
+        top: 4px;
+        right: -18px;
+        font-family: $icons;
+        font-weight: 900;
+        font-size: 9px;
+    }
+}
+
+.subNav__link {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: $light-blue;
+        font-size: 14px;
+    }
+}
+
+
+// Big nav
+
+nav {
+
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+        font-size: 17px;
+    }
+}
+
+.navItem {
+    padding: 24px 41px 24px 38px;
+    position: relative;
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 4px;
+            position: absolute;
+            opacity: 0;
+            transition: .5s ease;
+            background-image: linear-gradient(to right, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+            bottom: -16px;
+            left: 0;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+
+    &:last-child {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+}
+
+.navLink {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        color: $white;
+        display: inline-block;
+        letter-spacing: 1px;
+        
+    }
+}
+
+
+
+
+
+// Small nav

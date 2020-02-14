@@ -1,0 +1,31 @@
+.cover {
+    margin-top: 112px;
+    padding-bottom: 150px;
+}
+
+.cover__info {
+    padding-left: 24px;
+}
+
+.cover__info--span {
+    font-size: 16px;
+    font-weight: bold;
+    color: $white;
+    letter-spacing: .3px;
+}
+
+.cover__info--img {
+    margin-top: 47px;
+}
+
+.cover__info--btn {
+    margin-top: 70px;
+
+    span {
+        font-size: 18px;
+        color: $white;
+        font-weight: normal;
+        letter-spacing: .8px;
+    }
+
+}

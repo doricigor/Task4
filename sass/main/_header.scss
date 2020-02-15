@@ -35,8 +35,14 @@
 .header__navContainer {
     display: flex;
     justify-content: space-between;
+    padding-right: 9px;
+}
+
+.header__logo {
+    padding: 0 3px;
 }
 
 .header__finder {
     padding-top: 10px;
+    margin-left: 48px;
 }

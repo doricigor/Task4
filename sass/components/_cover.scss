@@ -1,6 +1,6 @@
 .cover {
     margin-top: 112px;
-    padding-bottom: 150px;
+    padding-bottom: 137px;
 }
 
 .cover__info {
@@ -11,7 +11,7 @@
     font-size: 16px;
     font-weight: bold;
     color: $white;
-    letter-spacing: .3px;
+    letter-spacing: .6px;
 }
 
 .cover__info--img {
@@ -19,13 +19,18 @@
 }
 
 .cover__info--btn {
-    margin-top: 70px;
+    margin-top: 53px;
+    padding-top: 6px;
+    height: 70px;
+    display: flex;
+    align-items: center;
 
     span {
         font-size: 18px;
         color: $white;
         font-weight: normal;
         letter-spacing: .8px;
+        margin-right: 40px;
     }
 
 }

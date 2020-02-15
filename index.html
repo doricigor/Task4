@@ -8,11 +8,12 @@
     <script src="https://kit.fontawesome.com/ca4875696e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
+        <!-- Header Top start -->
         <div class="header__top">
             <div class="container header__topContainer">
                 <span class="header__company">ASL Lightning Fixtures Made In America</span>
@@ -25,6 +26,8 @@
             </ul>
             </div>
         </div>
+        <!-- Header Top end -->
+        <!-- Header Bottom start -->
         <div class="header__bottom">
             <div class="header__nav">
                 <div class="container header__navContainer">
@@ -32,13 +35,14 @@
                         <a href="index.html"><img src="./img/logo.png" alt="Logo"></a>
                     </div>
                     <div class="header__finder">
-                        <a href="#" class="btn btn--finder">
-                            <div class="btn__icon--left">
-                                <img src="./img/boxes.png" alt="box" class="btn__boxes">
+                        <a href="#" class="btn btn--dark btn--icon-left btn--finder">
+                            <div class="btn__icon btn__icon--left">
+                                <img src="./img/boxes.png" alt="box">
                             </div>
                             PRODUCT FINDER
                         </a>
                     </div>
+                    <!-- Navigation start -->
                     <nav>
                         <ul class="navList">
                             <li class="navItem"><a href="#" class="navLink">Inspiration</a></li>
@@ -48,8 +52,10 @@
                             <li class="navItem"><a href="#" class="navLink"><i class="fas fa-search"></i></a></li>
                         </ul>
                     </nav>
+                    <!-- Navigation end -->
                 </div>
             </div>
+            <!-- Cover section -->
             <div class="cover">
                 <div class="container">
                     <div class="row">
@@ -59,11 +65,12 @@
                             </div>
                             <div class="cover__info--img">
                                 <img src="./img/text.png" alt="text">
+                                <!-- <h1 class="heading-1">Imagined customized and assembled next door</h1> -->
                             </div>
                             <div class="cover__info--btn">
                                 <span>BecauseLocal Is Agile.</span>
-                                <a href="#" class="btn">
-                                    <div class="btn__icon--left">
+                                <a href="#" class="btn btn--dark btn--icon-left">
+                                    <div class="btn__icon btn__icon--left">
                                         <i class="fas fa-circle-notch"></i>
                                     </div>
                                     MORE ON THAT
@@ -75,10 +82,211 @@
                 </div>
             </div>
         </div>
+        <!-- Header Bottom end -->
     </header>
+    <main>
+        <!-- Tab section start -->
+        <div class="container tabSection">
+            <div class="tabSection__heading">
+                <h2 class="heading-2">You specify. We make it - easy.</h2>
+            </div>
+            <!-- Tabs List start -->
+            <div class="tabsList">
+                <ul class="tabsList__tabs row">
+                    <li class="col-lg-4 col-sm-6 tabsList__item">
+                        <a href="#tab-1" class="tabsList__link">
+                            <span class="tabsList__link-icon icon-bulb"></span>
+                            Bring your ideas to light
+                        </a>
+                    </li>
+                    <li class="col-lg-4 col-sm-6 tabsList__item">
+                        <a href="#tab-2" class="tabsList__link tab-active">
+                            <span class="tabsList__link-icon icon-headset"></span>
+                            Hands-on Help
+                        </a>
+                    </li>
+                    <li class="col-lg-4 col-sm-6 tabsList__item">
+                        <a href="#tab-3" class="tabsList__link">
+                            <span class="tabsList__link-icon icon-tool"></span>
+                            Tools For Tinkering
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tabs List end -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <!-- Tabs Wrapper start -->
+            <div class="tabsWrap" style="display: block;">
+                <div class="row" id="tab-1" style="display: none;">
+                    <div class="tabsWrap__content col-md-6">
+                        <div class="tabsWrap__heading">
+                            <h2 class="heading-2">Hands-on Help</h2>
+                        </div>
+                        <div class="tabsWrap__text entry-content">
+                            <p>Whatever your lighting needs or budget, our team's here and happy to help.</p>
+                        </div>
+                        <div class="tabsWrap__contact">
+                            <a href="tel:(800)369-1101" class="tabsWrap__link">Call: (800) 369 - 1101</a>
+                            <a href="mailto:support@asl.com" class="tabsWrap__link">Email: support@asl.com</a>
+                        </div>
+                        <div class="tabsWrap__btn">
+                            <a href="#" class="btn btn--dark btn--icon-right btn--chat">
+                                <div class="btn__icon btn__icon--right">
+                                    <i class="fas fa-circle-notch"></i>
+                                </div>
+                                CHAT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tabsWrap__img col-md-6">
+                        <img src="./img/tabimg.png" alt="tabImg">
+                    </div>
+                </div>
+                <div class="row" id="tab-2">
+                    <div class="tabsWrap__content col-md-6">
+                        <div class="tabsWrap__heading">
+                            <h2 class="heading-2">Hands-on Help</h2>
+                        </div>
+                        <div class="tabsWrap__text entry-content">
+                            <p>Whatever your lighting needs or budget, our team's here and happy to help.</p>
+                        </div>
+                        <div class="tabsWrap__contact">
+                            <a href="tel:(800)369-1101" class="tabsWrap__link">Call: (800) 369 - 1101</a>
+                            <a href="mailto:support@asl.com" class="tabsWrap__link">Email: support@asl.com</a>
+                        </div>
+                        <div class="tabsWrap__btn">
+                            <a href="#" class="btn btn--dark btn--icon-right btn--chat">
+                                <div class="btn__icon btn__icon--right">
+                                    <i class="fas fa-circle-notch"></i>
+                                </div>
+                                CHAT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tabsWrap__img col-md-6">
+                        <img src="./img/tabimg.png" alt="tabImg">
+                    </div>
+                </div>
+                <div class="row" id="tab-3" style="display: none;">
+                    <div class="tabsWrap__content col-md-6">
+                        <div class="tabsWrap__heading">
+                            <h2 class="heading-2">Hands-on Help</h2>
+                        </div>
+                        <div class="tabsWrap__text entry-content">
+                            <p>Whatever your lighting needs or budget, our team's here and happy to help.</p>
+                        </div>
+                        <div class="tabsWrap__contact">
+                            <a href="tel:(800)369-1101" class="tabsWrap__link">Call: (800) 369 - 1101</a>
+                            <a href="mailto:support@asl.com" class="tabsWrap__link">Email: support@asl.com</a>
+                        </div>
+                        <div class="tabsWrap__btn">
+                            <a href="#" class="btn btn--dark btn--icon-right btn--chat">
+                                <div class="btn__icon btn__icon--right">
+                                    <i class="fas fa-circle-notch"></i>
+                                </div>
+                                CHAT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tabsWrap__img col-md-6">
+                        <img src="./img/tabimg.png" alt="tabImg">
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs Wrapper end -->
+        </div>
+        <!-- Tab section end -->
+        <!-- Slider Categories start -->
+
+        <div class="slider">
+            <div class="slider__container">
+                <div class="slider__wrap">
+                    <div class="slider__box">
+                        <div class="slider__slide">
+                            <div class="slider__slide-img">
+                                <img src="./img/luster1.png" alt="img" class="slideImg">
+                            </div>
+                            <div class="slider__slide-content">
+                                <div class="slider__slide-content-top">
+                                    <h3 class="heading-3 slideHeading">Indoor Lightning</h3>
+                                    <p class="slideDesc">Designer, industrial and beyond</p>
+                                </div>
+                                <div class="slider__slide-content-bottom">
+                                    <div class="slideBtn">
+                                            BROWSE PRODUCTS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__box">
+                        <div class="slider__slide">
+                            <div class="slider__slide-img">
+                                <img src="./img/luster2.png" alt="img" class="slideImg">
+                            </div>
+                            <div class="slider__slide-content"> 
+                                <div class="slider__slide-content-top">
+                                    <h3 class="heading-3 slideHeading">Outdoor Lightning</h3>
+                                    <p class="slideDesc">Weather every storm</p>
+                                </div>
+                                <div class="slider__slide-content-bottom">
+                                    <div class="slideBtn">
+                                        BROWSE PRODUCTS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__box">
+                        <div class="slider__slide">
+                            <div class="slider__slide-img">
+                                <img src="./img/luster3.png" alt="img" class="slideImg">
+                            </div>
+                            <div class="slider__slide-content">
+                                <div class="slider__slide-content-top">
+                                    <h3 class="heading-3 slideHeading">Specialty Lightning</h3>
+                                    <p class="slideDesc">When ordinary won't do</p>
+                                </div>
+                                <div class="slider__slide-content-bottom">
+                                    <div class="slideBtn">
+                                        BROWSE PRODUCTS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__box">
+                        <div class="slider__slide">
+                            <div class="slider__slide-img">
+                                <img src="./img/luster4.png" alt="img" class="slideImg">
+                            </div>
+                            <div class="slider__slide-content">
+                                <div class="slider__slide-content-top">
+                                    <h3 class="heading-3 slideHeading">Wall & Celing Companions</h3>
+                                    <p class="slideDesc">Indestructible floodlights and more</p>
+                                </div>
+                                <div class="slider__slide-content-bottom">
+                                    <div class="slideBtn">
+                                        BROWSE PRODUCTS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Categories end -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html> 

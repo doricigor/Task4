@@ -1,5 +1,3 @@
-// @import "circular-std";
-
 @import 'config/variable';
 
 @import 'base//typography';
@@ -12,5 +10,7 @@
 
 @import 'components/nav';
 @import 'components/cover';
+@import 'components/tabSection';
+@import 'components/sliderCategories';
 
 @import 'parts/btn';

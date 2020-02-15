@@ -1,0 +1,163 @@
+.tabSection {
+    margin-top: 84px;
+}
+
+.tabSection__heading {
+    text-align: center;
+}
+
+.tabsList {
+    margin-top: 60px;
+}
+
+.tabsList__tabs {
+    list-style: none;
+}
+
+.tabsList__item {
+    text-align: center;
+    padding-right: 0;
+    position: relative;
+
+    &:first-child {
+        padding-left: 25px;
+    }
+    
+    
+}
+
+.tabsList__link {
+    &,
+    &:visited,
+    &:link,
+    &:active {
+        text-decoration: none;
+        font-size: 20px;
+        color: $color-primary-light;
+        font-weight: 700;
+        line-height: 1.2;
+        padding: 30px 40px 30px 78px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 99.5%;
+            background-color: black;
+        }
+
+        &:hover {
+            &::after {
+                transition: .3s ease;
+                height: 7px;
+                background: linear-gradient(to right, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+                bottom: -8px;
+            }
+        }
+    }
+}
+
+.tab-active {
+    transition: .3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 7px;
+        background: linear-gradient(to right, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        bottom: -8px;
+        width: 100%;
+        z-index: 2;
+    }
+    
+}
+
+// General class for icons
+.tabsList__link-icon {
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $icons;
+    color: $color-primary-light;
+}
+
+// Classes for every icon in tab
+.icon-bulb {
+    left: 51px;
+
+    &::before {
+        content: '\f0eb';
+    }
+}
+
+.icon-headset {
+    left: 94px;
+
+    &::before {
+        content: '\f590';
+    }
+}
+
+.icon-tool {
+    left: 75px;
+
+    &::before {
+        content: '\f0ad';
+    }
+}
+
+// Content in wrapper
+.tabsWrap {
+
+}
+
+.tabsWrap__content {
+    padding-left: 21px;
+}
+
+.tabsWrap__heading {
+    margin-top: 82px;
+}
+
+.tabsWrap__text {
+    margin-top: 43px;
+    max-width: 410px;
+}
+
+.tabsWrap__contact {
+    margin-top: 41px;
+}
+
+.tabsWrap__link {
+    &,
+    &:link,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        color: $color-primary-light;
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: -1.2px;
+        margin-right: 25px;
+    }
+}
+
+.tabsWrap__btn {
+    margin-top: 93px;
+    padding-left: 5px;
+}
+
+.tabsWrap__img {
+    display: flex;
+    justify-content: center;
+}

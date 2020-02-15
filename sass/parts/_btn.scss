@@ -5,48 +5,79 @@
     &:active,
     &:visited {
         text-decoration: none;
-        color: $white;
         display: inline-block;
-        outline: none;
-        border: none;
+        border: 0;
         border-radius: 100px;
-        background-color: $color-primary-light;
         font-size: 14px;
-        font-weight: bold;
         letter-spacing: 2px;
+        transition: .3s ease;
+        text-align: center;
+        position: relative;
+
+        &:hover {
+            color: $white;
+        }
     }
 }
 
 // Btn classes
+.btn--icon-left {
+    padding: 18px 20px 18px 63px;
+}
+
+.btn--icon-right {
+    padding: 18px 60px 18px 20px;
+}
+
+
 .btn--finder {
-    height: 50px;
-    padding: 15px 20px;
-    width: 240px;
-    margin-left: 68px;
-
-    &:hover {
-        // TODO
-    }
+    font-weight: bold;
+    padding: 15px 20px 15px 74px;
+    letter-spacing: 2.3px;
 }
 
-.btn--info {
-    margin-left: 37px;
-    padding: 10px 17px;
-}
-
-// Class for img/icons of btns
-.btn__boxes {
-    margin-top: -5px;
+.btn--chat {
+    padding: 18px 125px 18px 33px;
 }
 
 
-// Btn classes for position of icon
+// Btn icon
+.btn__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .btn__icon--left {
-    float: left;
-    margin-right: 17px;
+    left: 33px;
+    right: auto;
 }
 
 .btn__icon--right {
-    float: right;
-    margin-left: 10px;
+    right: 33px;
+    left: auto;
+}
+
+// Classes for background of btns
+.btn--light {
+    color: $color-primary-light;
+    background-color: $white;
+}
+
+.btn--dark {
+    background-color: $color-primary-light;
+    color: $white;
+}
+
+
+// Btn in slider
+
+.slideBtn {
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-primary-light;
+    padding: 10px 45px 10px 0;
+    display: inline-block;
+    position: absolute;
+    bottom: -45px;
 }

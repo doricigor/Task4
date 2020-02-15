@@ -58,10 +58,6 @@
 
 // Big nav
 
-nav {
-
-}
-
 .navList {
     list-style: none;
     display: flex;
@@ -73,7 +69,7 @@ nav {
 }
 
 .navItem {
-    padding: 24px 41px 24px 38px;
+    padding: 21px 41px 27px 41px;
     position: relative;
 
         &::after {
@@ -92,6 +88,9 @@ nav {
             &::after {
                 opacity: 1;
                 width: 100%;
+            }
+            .navLink {
+                color: $yellow;
             }
         }
 
@@ -113,7 +112,6 @@ nav {
         color: $white;
         display: inline-block;
         letter-spacing: 1px;
-        
     }
 }
 

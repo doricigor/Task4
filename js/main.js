@@ -13,16 +13,16 @@ $(document).ready(function() {
 
     // Slick slider for Categories 
 
-    $('.sliderWrap').slick({
+    $('.slider__wrap').slick({
         dots: true,
-        arrows: false,
-        autoplay: true,
+        arrows: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
-        sliderWrap: [
+        responsive: [
           {
             breakpoint: 1024,
             settings: {

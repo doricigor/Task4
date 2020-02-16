@@ -1,5 +1,7 @@
 // Main class for btn
 .btn {
+    outline: none !important;
+
     &,
     &:link,
     &:active,
@@ -13,11 +15,23 @@
         transition: .3s ease;
         text-align: center;
         position: relative;
-
+        
         &:hover {
             color: $white;
+            
+            .btn__icon::before {
+                top: 25%;
+                transition: .3s ease;
+            }
+    
+            .btn__icon::after {
+                width: 0;
+                transition: .3s ease;
+            }
+    
         }
     }
+    
 }
 
 // Btn classes
@@ -29,7 +43,6 @@
     padding: 18px 60px 18px 20px;
 }
 
-
 .btn--finder {
     font-weight: bold;
     padding: 15px 20px 15px 74px;
@@ -40,21 +53,69 @@
     padding: 18px 125px 18px 33px;
 }
 
-
 // Btn icon
 .btn__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 29px;
+    transition: .3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        background: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -49%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -49%);
+    }
+}
+
+.btn__icon--color {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+}
+
+.btn__icon--normal {
+    color: $silver;
+    
+
+    &::after {
+        color: $silver;
+    }
+
+    &::beforew {
+        color: $silver;
+    }
 }
 
 .btn__icon--left {
-    left: 33px;
+    left: 21px;
     right: auto;
 }
 
 .btn__icon--right {
-    right: 33px;
+    right: 21px;
+    left: auto;
+}
+
+.btn__icon--normal--right {
+    right: 0;
     left: auto;
 }
 
@@ -69,9 +130,7 @@
     color: $white;
 }
 
-
 // Btn in slider
-
 .slideBtn {
     font-size: 14px;
     font-weight: bold;

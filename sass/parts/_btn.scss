@@ -1,21 +1,33 @@
-// Main class for btn
-.btn {
+// Common class for btn and slidebtn
+.btn,
+.slideBtn {
     outline: none !important;
 
     &,
     &:link,
     &:active,
     &:visited {
+        position: relative;
         text-decoration: none;
         display: inline-block;
         border: 0;
-        border-radius: 100px;
         font-size: 14px;
         letter-spacing: 2px;
         transition: .3s ease;
         text-align: center;
-        position: relative;
-        
+    }
+}
+
+// Specific class for btn
+.btn {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        border-radius: 100px;
+        background-color: $color-primary-light;
+        color: $white;
+
         &:hover {
             color: $white;
             
@@ -31,7 +43,6 @@
     
         }
     }
-    
 }
 
 // Btn classes
@@ -43,14 +54,13 @@
     padding: 18px 60px 18px 20px;
 }
 
-.btn--finder {
-    font-weight: bold;
-    padding: 15px 20px 15px 74px;
-    letter-spacing: 2.3px;
-}
-
-.btn--chat {
-    padding: 18px 125px 18px 33px;
+// Btn img 
+.btn__img {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 33px;
+    right: auto;
 }
 
 // Btn icon
@@ -60,13 +70,17 @@
     transform: translateY(-50%);
     font-size: 29px;
     transition: .3s ease;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: $gradient;
 
     &::before {
         content: '';
         position: absolute;
         width: 2px;
         height: 10px;
-        background: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        background: $gradient;
         top: 50%;
         left: 49%;
         transform: translate(-50%, -49%);
@@ -77,33 +91,14 @@
         position: absolute;
         width: 10px;
         height: 2px;
-        background: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        background: $gradient;
         top: 50%;
         left: 49%;
         transform: translate(-50%, -49%);
     }
 }
 
-.btn__icon--color {
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
-}
-
-.btn__icon--normal {
-    color: $silver;
-    
-
-    &::after {
-        color: $silver;
-    }
-
-    &::beforew {
-        color: $silver;
-    }
-}
-
+// Position of icon in btn and slideBtn
 .btn__icon--left {
     left: 21px;
     right: auto;
@@ -114,29 +109,96 @@
     left: auto;
 }
 
-.btn__icon--normal--right {
-    right: 0;
-    left: auto;
-}
-
-// Classes for background of btns
-.btn--light {
-    color: $color-primary-light;
-    background-color: $white;
-}
-
-.btn--dark {
-    background-color: $color-primary-light;
-    color: $white;
-}
-
-// Btn in slider
+// Specific class for slideBtn
 .slideBtn {
-    font-size: 14px;
-    font-weight: bold;
-    color: $color-primary-light;
-    padding: 10px 45px 10px 0;
-    display: inline-block;
+    
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        padding: 18px 60px 18px 0;
+        color: $color-primary-light;
+        
+        &:hover {
+            
+            .slideIcon::before {
+                top: 25%;
+                transition: .3s ease;
+            }
+    
+            .slideIcon::after {
+                width: 0;
+                transition: .3s ease;
+            }
+    
+        }
+    }
+
+    &:hover {
+        .slideIcon {
+            
+            &::before {
+                top: 25%;
+                transition: .3s ease;
+                background: $gradient;
+            }
+
+            &::after {
+                width: 0;
+                transition: .3s ease;
+                background: $gradient;
+            }
+        }
+    }
+}
+
+// Icon in slideBtn
+.slideIcon {
     position: absolute;
-    bottom: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 29px;
+    transition: .3s ease;
+    color: $silver;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        background-color: $silver;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -49%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: $silver;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -49%);
+    }
+}
+
+// Single btn class
+.btn--finder {
+    font-weight: bold;
+    padding: 15px 20px 15px 74px;
+    letter-spacing: 2.3px;
+}
+
+.btn--chat {
+    padding: 18px 125px 18px 33px;
+}
+
+.btn--about {
+    padding: 18px 66px 18px 27px;
+}
+
+.btn--process {
+    padding: 18px 61px 18px 25px;
 }

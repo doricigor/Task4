@@ -57,7 +57,7 @@
             &::after {
                 transition: .3s ease;
                 height: 7px;
-                background: linear-gradient(to right, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+                background: $gradient;
                 bottom: -8px;
             }
         }
@@ -73,7 +73,7 @@
         left: 50%;
         transform: translateX(-50%);
         height: 7px;
-        background: linear-gradient(to right, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        background: $gradient;
         bottom: -8px;
         width: 100%;
         z-index: 2;
@@ -138,7 +138,7 @@
     margin-top: 41px;
 }
 
-.tabsWrap__link {
+.tabsWrap__contact-link {
     &,
     &:link,
     &:visited,

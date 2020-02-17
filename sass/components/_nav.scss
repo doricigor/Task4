@@ -58,7 +58,7 @@
 
 // Big nav
 
-.navList {
+.nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -79,7 +79,7 @@
             position: absolute;
             opacity: 0;
             transition: .5s ease;
-            background-image: linear-gradient(to right, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+            background-image: $gradient;
             bottom: -16px;
             left: 0;
         }

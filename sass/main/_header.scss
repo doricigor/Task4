@@ -5,12 +5,12 @@
     background-color: $color-primary-light;
 }
 
-.header__topContainer {
+.header__top-container {
     display: flex;
     justify-content: space-between;
 }
 
-.header__company {
+.header__top-company {
     font-size: 14px;
     color: $light-blue;
     padding: 6px 9px 8px 9px;
@@ -30,19 +30,20 @@
 .header__nav {
     background-color: transparent;
     border-bottom: .5px solid $color-primary-light;
+    padding-bottom: 16px;
 }
 
-.header__navContainer {
+.header__nav-container {
     display: flex;
     justify-content: space-between;
     padding-right: 9px;
 }
 
-.header__logo {
+.header__nav-logo {
     padding: 0 3px;
 }
 
-.header__finder {
+.header__nav-finder {
     padding-top: 10px;
     margin-left: 48px;
 }

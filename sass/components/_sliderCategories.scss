@@ -1,6 +1,6 @@
 .slider {
     padding: 0;
-    max-width: 100%;
+    margin-bottom: 165px;
 }
 
 .slider__container {
@@ -10,11 +10,8 @@
 }
 
 .slider__wrap {
-    display: flex;
     padding-left: 20px;
     padding-right: 0;
-    width: 100%;
-    max-height: 700px;
 }
 
 .slider__box {
@@ -37,7 +34,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: linear-gradient(to top, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+        background: $gradient;
     }
 
     &:hover {
@@ -55,7 +52,23 @@
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-            background-image: linear-gradient(to left, #ffd86a 0%, #fff8e4 43%, #b4e2ff 100%);
+            background-image: $gradient;
+        }
+
+        .slideIcon {
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: $gradient;
+        
+            &::before {
+                background: $gradient;
+
+            }
+
+            &::after {
+                background: $gradient;
+            }
         }
     }
 }

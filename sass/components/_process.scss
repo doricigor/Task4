@@ -1,0 +1,43 @@
+.process {
+    margin-top: 142px;
+    position: relative;
+    height: 722px;
+    display: flex;
+    align-items: center;
+}
+
+.process__wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.process__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.process__content {
+    z-index: 2;
+    max-width: 533px;
+    width: 100%;
+    padding-left: 11px;
+}
+
+.process__content-heading {
+    margin-bottom: 32px;
+}
+
+.process__content-text {
+    font-size: 22px;
+    color: $color-primary-light;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 76px;
+}
+
+.process__content-btn {
+
+}

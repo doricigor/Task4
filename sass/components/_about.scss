@@ -16,6 +16,17 @@
 .about__content-wrap {
     margin-top: 174px;
 }
+
+.about__content-heading-wrap {
+    position: relative;
+}
+
+.about__content-heading-logo {
+    position: absolute;
+    right: 48px;
+    top: -47px;
+    z-index: -1;
+}
  
 .about__content-heading {
     padding-bottom: 41px;

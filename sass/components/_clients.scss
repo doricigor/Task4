@@ -1,0 +1,38 @@
+.clients{
+    margin-top: 143px;
+
+    .slick-prev {
+        top: -78px;
+        right: 86px;
+    }
+
+    .slick-next {
+        top: -78px;
+        right: 3px;
+    }
+
+    .slick-dots {
+        top: -73px;
+        right: 45px;
+    }
+}
+
+.clients__top-heading {
+    padding-left: 13px;
+}
+
+.clients__wrap {
+    margin-top: 37px;
+    position: relative;
+}
+
+.clients__slide-content {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.clients__slide-img {
+    // width: 100%;
+    margin: 0 auto;
+}

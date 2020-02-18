@@ -1,0 +1,99 @@
+// General settings for slider docs and arrows 
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(-50%);
+    list-style: none;
+
+        button {
+            display: block;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: transparent;
+            height: 7px;
+            width: 7px;
+            margin: 0 4px;
+        }
+
+        li.slick-active button {
+            background-color: black;
+        }
+    
+        li button {
+            font-size: 0;
+        }
+}
+
+// Arrows for slick slider
+.slick-arrow {
+    bottom: -84px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    border: none;
+    transform: translateX(-51%);
+}
+
+.slick-prev {
+    position: absolute;
+    background-color: transparent;
+
+    // Arrow
+    &::before {
+        content: '\f060';
+        font-family: $icons;
+        font-weight: 900;
+        color: $white;
+        font-size: 15px;
+        position: absolute;
+        top: -1px;
+        left: -7px;
+        z-index: 3;
+        color: black;
+    }
+
+    // Circle
+    &::after {
+        content: '';
+        position: absolute;
+        top: -17px;
+        left: -26px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    background-color: transparent;
+
+    // Arrow
+    &::before {
+        content: '\f061';
+        font-family: $icons;
+        font-weight: 900;
+        color: $white;
+        font-size: 15px;
+        position: absolute;
+        top: -1px;
+        left: 24px;
+        z-index: 3;
+        color: black;
+    }
+
+    // Circle
+    &::after {
+        content: '';
+        position: absolute;
+        top: -17px;
+        left: 6px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+}

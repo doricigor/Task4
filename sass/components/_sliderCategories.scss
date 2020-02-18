@@ -1,12 +1,27 @@
 .slider {
     padding: 0;
     margin-bottom: 165px;
+
+    .slick-prev {
+        left: 49%;
+    }
+
+    .slick-next {
+        left: 53%;
+    }
+
+    .slick-dots {
+        bottom: -83px;
+        left: 51%;
+    }
+
+
 }
 
 .slider__container {
     width: 100%;
     max-width: 1870px;
-    margin: 72px auto 0 auto;
+    margin: 72px 0 0 0;
 }
 
 .slider__wrap {
@@ -17,15 +32,11 @@
 .slider__box {
     background-color: $light-blue2;
     position: relative;
-    width: 25%;
+    width: 450px;
     min-width: 250px;
     height: 700px;
     flex: 1;
     transition: .3s ease;
-
-    &:not(:last-child) {
-        margin-right: 45px;
-    }
 
     &::before {
         content: '';
@@ -34,7 +45,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: $gradient;
+        background: $gradient-vertical;
     }
 
     &:hover {
@@ -56,10 +67,15 @@
         }
 
         .slideIcon {
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            background-image: $gradient;
+            img {
+                &:last-child {
+                    display: block;
+                }
+
+                &:first-child {
+                    display: none;
+                }
+            }
         
             &::before {
                 background: $gradient;
@@ -79,7 +95,7 @@
 
 // Fix gap on elements in slider
 .slick-slide {
-    margin: 0 27px;
+    margin: 0 16px 0 33px;
 }
 
 .slick-list {
@@ -120,105 +136,7 @@
 }
 
 .slider__slide-content-bottom {
-    margin-top: 45px;
+    margin-top: 35px;
     position: relative;
 }
 
-// Dots for slick slider
-.slick-dots {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: -83px;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-
-        button {
-            display: block;
-            border: 1px solid black;
-            border-radius: 50%;
-            background-color: transparent;
-            height: 7px;
-            width: 7px;
-            margin: 0 4px;
-        }
-
-        li.slick-active button {
-            background-color: black;
-        }
-    
-        li button {
-            font-size: 0;
-        }
-}
-
-// Arrows for slick slider
-.slick-arrow {
-    position: absolute;
-    bottom: -84px;
-    height: 30px;
-    width: 30px;
-    font-size: 0;
-    border: none;
-    left: 51%;
-    transform: translateX(-51%);
-}
-
-.slick-prev {
-    position: absolute;
-    left: 48%;
-
-    // Arrow
-    &::before {
-        content: '\f060';
-        font-family: $icons;
-        font-weight: 900;
-        color: $white;
-        font-size: 15px;
-        position: absolute;
-        top: -1px;
-        left: -7px;
-        z-index: 3;
-    }
-
-    // Circle
-    &::after {
-        content: '\f111';
-        font-family: $icons;
-        font-weight: 900;
-        font-size: 50px;
-        position: absolute;
-        top: -28px;
-        left: -26px;
-    }
-}
-
-.slick-next {
-    position: absolute;
-    left: 52%;
-
-    // Arrow
-    &::before {
-        content: '\f061';
-        font-family: $icons;
-        font-weight: 900;
-        color: $white;
-        font-size: 15px;
-        position: absolute;
-        top: -1px;
-        left: 24px;
-        z-index: 3;
-    }
-
-    // Circle
-    &::after {
-        content: '\f111';
-        font-family: $icons;
-        font-weight: 900;
-        font-size: 50px;
-        position: absolute;
-        top: -28px;
-        left: 7px;
-    }
-}

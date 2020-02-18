@@ -1,8 +1,11 @@
 // Fonts
 
 @font-face {
-    src:('../fonts/CircularStd-Medium.ttf');
-    font-family: 'CircularStd-Medium';
+    font-family: 'Circular Std';
+    src: url('/fonts/CircularStd-Medium.woff2') format('woff2'),
+         url('/fonts/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
@@ -13,7 +16,7 @@
 $font-primary: 'Lato', sans-serif;
 $icons: "Font Awesome 5 Pro";
 $font-heading1: "BigSquareDots", sans-serif;
-$font-heading2: "CircularStd-Medium", sans-serif;
+$font-heading2: 'Circular Std';
 
 .heading-1 {
     font-size: 54px;
@@ -28,7 +31,7 @@ $font-heading2: "CircularStd-Medium", sans-serif;
     font-family: $font-heading2;
     line-height: 1.3;
     color: $color-primary-light;
-    letter-spacing: 1.1px;
+    letter-spacing: .1px;
 }
 
 .heading-3 {
@@ -44,5 +47,5 @@ $font-heading2: "CircularStd-Medium", sans-serif;
     color: $color-primary-light;
     font-weight: 300;
     line-height: 1.5;   
-    letter-spacing: .2px;
+    letter-spacing: .5px;
 }

@@ -1,0 +1,93 @@
+.reviews {
+    padding-top: 118px;
+    position: relative;
+
+    .slick-prev {
+        bottom: 35px;
+        left: -245px;
+    }
+
+    .slick-next {
+        bottom: 35px;
+        left: -170px;
+    }
+
+    .slick-dots {
+        bottom: 37px;
+        left: -209px;
+    }
+}
+
+.reviews__left {
+
+}
+
+.reviews__left-quote {
+    margin-top: 20px;
+}
+
+.reviews__left-heading {
+    margin-top: 47px;
+    padding-left: 6px;
+
+    h2 {
+        letter-spacing: 2.1px !important;
+    }
+}
+
+.reviews__right {
+    padding-left: 0;
+}
+
+.reviews__wrap {
+
+}
+
+.reviews__slide {
+    padding: 75px 45px;
+    height: 449px;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: $color-primary;
+        transition: .3s ease;
+
+        .reviews__slide-top-title,
+        .reviews__slide-text,
+        .reviews__slide-bottom-btn {
+            color: $white;
+            transition: .3s ease;
+        }
+
+        .reviews__slide-bottom-btn {
+            &::before {
+                background: $gradient;
+            }
+
+            &::after {
+                background: $gradient;
+            }
+        }
+    }
+}
+
+.reviews__slide-top {
+
+}
+
+.reviews__slide-top-title {
+    font-size: 30px;
+    font-family: $font-heading2;
+    color: $color-primary-light;
+    display: block;
+    line-height: 1.2;
+}
+
+.reviews__slide-text {
+    margin-top: 34px;
+}
+
+.reviews__slide-bottom {
+    margin-top: 45px;
+    letter-spacing: 1.2px;
+}

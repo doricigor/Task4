@@ -1,23 +1,237 @@
 .spotlight {
+    margin-top: 137px;
 
-}
+    .slick-prev {
+        top: -89px;
+        right: 86px;
+    }
 
-.spotlight__top {
+    .slick-next {
+        top: -89px;
+        right: 3px;
+    }
 
-}
-
-.spotlight__top-heading {
-
+    .slick-dots {
+        top: -83px;
+        right: 45px;
+    }
 }
 
 .spotlight__wrap {
-
+    margin-top: 50px;
+    position: relative;
 }
 
 .spotlight__slide {
+    background-color: $light-blue2;
+    padding: 27px 25px 42px;
+    height: 404px;
+    transition: .3s ease;
 
+    &:hover {
+        background-color: $color-primary-light;
+        transition: .3s ease;
+
+        .spotlight-rfba,
+        .spotlight__slide-top-right,
+        .spotlight__slide-bottom-left,
+        .spotlight__slide-bottom-right {
+            color: $white;
+            transition: .3s ease;
+        }
+
+        .spotlight__slide-bottom-acrylic {
+            &::before {
+                background-image: url(/img/acrylic-white.png);
+            }
+        }
+
+        .spotlight__slide-bottom-steel {
+            &::before {
+                background-image: url(/img/steel-white.png);
+            }
+        }
+
+        .spotlight__slide-hover-icons {
+            display: block;
+            transition: .3s ease;
+        }
+
+    }
 }
 
 .spotlight__slide-content {
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
+
+.spotlight__slide-top {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.spotlight__slide-top-left {
+
+}
+
+.spotlight-rfba {
+    font-size: 30px;
+    color: $color-primary-light;
+    display: block;
+}
+
+.spotlight-color {
+    color: $white;
+    padding: 0 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+}
+
+.spotlight-color--bronze {
+    background-color: $bronze;
+}
+
+.spotlight-color--silver {
+    background-color: $silver;
+    padding: 0 9px;
+}
+
+.spotlight__slide-top-right {
+    padding-top: 3px;
+    letter-spacing: .2px;
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.spotlight__slide-mid {
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.spotlight__slide-img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.spotlight__slide-hover-icons {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+    img {
+        padding: 15px 0;
+        border-radius: 50%;
+    }
+}
+
+.spotlight__slide-hover-icons--1 {
+
+    &:hover {
+        img {
+            transform: rotate(360deg);
+            transition: .5s ease;
+        }
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    &::before {
+        content: '\f56c';
+        font-family: $icons;
+        font-weight: 900;
+        font-size: 20px;
+        color: $white;
+        position: absolute;
+        top: 40px;
+        right: 9px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.spotlight__slide-hover-icons--2 {
+
+    &:hover {
+        img {
+            transform: rotate(360deg);
+            transition: .5s ease;
+        }
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    &::before {
+        content: '\f07b';
+        font-family: $icons;
+        font-weight: 900;
+        font-size: 20px;
+        color: $white;
+        position: absolute;
+        bottom: 10px;
+        right: 4px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.spotlight__slide-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlight__slide-bottom-left {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 13px;
+}
+
+.spotlight__slide-bottom-acrylic {
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+        content: '';
+        background-image: url(/img/acrylic.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.spotlight__slide-bottom-right {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.spotlight__slide-bottom-steel {
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+        content: '';
+        background-image: url(/img/steel.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0;
+    }
+}
+

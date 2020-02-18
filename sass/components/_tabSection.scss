@@ -117,9 +117,6 @@
 }
 
 // Content in wrapper
-.tabsWrap {
-
-}
 
 .tabsWrap__content {
     padding-left: 21px;
@@ -130,7 +127,7 @@
 }
 
 .tabsWrap__text {
-    margin-top: 43px;
+    margin-top: 40px;
     max-width: 410px;
 }
 
@@ -147,8 +144,8 @@
         color: $color-primary-light;
         font-size: 21px;
         font-weight: bold;
-        letter-spacing: -1.2px;
-        margin-right: 25px;
+        letter-spacing: -.5px;
+        margin-right: 22px;
     }
 }
 

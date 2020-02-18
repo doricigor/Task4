@@ -12,7 +12,7 @@
         display: inline-block;
         border: 0;
         font-size: 14px;
-        letter-spacing: 2px;
+        letter-spacing: 1.3px;
         transition: .3s ease;
         text-align: center;
     }
@@ -32,7 +32,7 @@
             color: $white;
             
             .btn__icon::before {
-                top: 25%;
+                top: 31%;
                 transition: .3s ease;
             }
     
@@ -66,7 +66,7 @@
 // Btn icon
 .btn__icon {
     position: absolute;
-    top: 50%;
+    top: 46%;
     transform: translateY(-50%);
     font-size: 29px;
     transition: .3s ease;
@@ -79,33 +79,33 @@
         content: '';
         position: absolute;
         width: 2px;
-        height: 10px;
+        height: 12px;
         background: $gradient;
-        top: 50%;
-        left: 49%;
+        top: 53%;
+        left: 50%;
         transform: translate(-50%, -49%);
     }
 
     &::after {
         content: '';
         position: absolute;
-        width: 10px;
+        width: 12px;
         height: 2px;
         background: $gradient;
-        top: 50%;
-        left: 49%;
+        top: 56%;
+        left: 50%;
         transform: translate(-50%, -49%);
     }
 }
 
 // Position of icon in btn and slideBtn
 .btn__icon--left {
-    left: 21px;
+    left: 19px;
     right: auto;
 }
 
 .btn__icon--right {
-    right: 21px;
+    right: 19px;
     left: auto;
 }
 
@@ -138,7 +138,7 @@
         .slideIcon {
             
             &::before {
-                top: 25%;
+                top: 0;
                 transition: .3s ease;
                 background: $gradient;
             }
@@ -161,25 +161,35 @@
     transition: .3s ease;
     color: $silver;
 
+    img {
+        &:last-child {
+            display: none;
+        }
+
+        &:first-child {
+            display: block;
+        }
+    }
+
     &::before {
         content: '';
         position: absolute;
         width: 2px;
-        height: 10px;
+        height: 12px;
         background-color: $silver;
-        top: 50%;
-        left: 49%;
+        top: 45%;
+        left: 50%;
         transform: translate(-50%, -49%);
     }
 
     &::after {
         content: '';
         position: absolute;
-        width: 10px;
+        width: 12px;
         height: 2px;
         background-color: $silver;
-        top: 50%;
-        left: 49%;
+        top: 45%;
+        left: 50%;
         transform: translate(-50%, -49%);
     }
 }
@@ -188,7 +198,7 @@
 .btn--finder {
     font-weight: bold;
     padding: 15px 20px 15px 74px;
-    letter-spacing: 2.3px;
+    letter-spacing: 2px !important;
 }
 
 .btn--chat {
@@ -196,9 +206,49 @@
 }
 
 .btn--about {
-    padding: 18px 66px 18px 27px;
+    padding: 18px 76px 18px 27px;
 }
 
 .btn--process {
-    padding: 18px 61px 18px 25px;
+    padding: 18px 62px 18px 36px;
+}
+
+.btn--green {
+    padding: 18px 60px 18px 39px;
+}
+
+.reviews__slide-bottom-btn {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        font-family: $font-primary;
+        font-size: 14px;
+        font-weight: bold;
+        color: $color-primary-light;
+        position: relative;
+        text-decoration: none;
+        display: block;
+        padding-left: 5px;
+
+        &::before {
+            content: '';
+            width: 17px;
+            height: 2px;
+            background-color: $color-primary-light;
+            position: absolute;
+            top: 11px;
+            right: -12px;
+        }
+
+        &::after {
+            content: '';
+            width: 2px;
+            height: 17px;
+            background-color: $color-primary-light;
+            position: absolute;
+            top: 4px;
+            right: -4px;
+        }
+    }
 }

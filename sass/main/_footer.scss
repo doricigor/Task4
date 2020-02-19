@@ -1,10 +1,18 @@
 footer {
     background-color: $color-primary;
     padding-top: 93px;
+
+    @include responsive(md) {
+        padding-top: 65px;
+    }
 }
 
 .footer {
     padding-bottom: 87px;
+    
+    @include responsive(md) {
+        padding-bottom: 40px;
+    }
 }
 
 // Global footer title 
@@ -13,7 +21,22 @@ footer {
     color: $color-footer-light;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+
+    @include responsive(md) {
+        border-top: 1px solid $color-primary-light;
+        padding-top: 5px;
+    }
+}
+
+// Global footer content margin
+
+.footer__mt-content {
+    margin-top: 43px;
+
+    @include responsive(md) {
+        margin-top: 15px;
+    }
 }
 
 // Global footer link
@@ -44,6 +67,12 @@ footer {
 // Footer logo
 .footer__logo {
     padding-left: 25px;
+
+    @include responsive(md) {
+        text-align: center;
+        padding-bottom: 25px;
+        padding-left: 0;
+    }
 }
 
 .footer__logo-img {
@@ -55,10 +84,11 @@ footer {
 .footer__address-wrap {
     width: 170px;
     margin-left: -20px;
-}
 
-.footer__address-content {
-    margin-top: 43px;
+    @include responsive(md) {
+        margin: 0 auto;
+        text-align: center;   
+    }
 }
 
 .footer__address-social {
@@ -80,37 +110,74 @@ footer {
         opacity: 1;
     }
     }
+
+    @include responsive(md) {
+        margin: 0 auto;
+    }
 }
 
 // Footer nav
+.footer__nav {
+    @include responsive(md) {
+        margin-top: 20px;
+    }
+}
 
 .footer__nav-wrap {
     padding-left: 37px;
+
+    @include responsive(md) {
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
-.footer__nav-content {
-    margin-top: 43px;
-}
 
 // Footer contact
+.footer__contanct {
+    @include responsive(md) {
+        margin-top: 10px;
+    }
+}
 
 .footer__contact-wrap {
     padding-left: 7px;
+
+    @include responsive(md) {
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 .footer__contact-content {
-    margin-top: 43px;
+    @include responsive(ml) {
+        margin-top: 20px !important;
+    }
 }
 
 // Footer subscribe
+.footer__sub {
+    @include responsive(md) {
+        margin-top: 10px;
+    }
+}
 
 .footer__sub-wrap {
     padding-left: 32px;
+
+    @include responsive(md) {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 .footer__sub-bottom {
     display: flex;
     margin-top: 43px;
+
+    @include responsive(ml) {
+        flex-direction: column;
+    }
 }
 
 .footer__sub-bottom-input {
@@ -120,6 +187,14 @@ footer {
     padding: 15px;
     border-radius: 8px;
     color: $white;
+
+    @include responsive(ml) {
+        width: 240px;
+    }
+
+    @include responsive(md) {
+        margin: 0 auto;
+    }
 
     &::placeholder {
         color: $color-footer-light;
@@ -133,9 +208,19 @@ footer {
     font-size: 14px;
     padding: 22px 0 1px;
 
+    @include responsive(md) {
+        text-align: center;
+        padding: 14px 0;
+    }
+
     p {
         color: $color-footer-light;
         margin-left: 25px;
+
+        @include responsive(md) {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
     }
 
     a {

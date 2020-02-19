@@ -1,6 +1,10 @@
 .featured {
     margin-top: 119px;
 
+    @include responsive(ml) {
+        margin-top: 80px;
+    }
+
     .slick-prev {
         top: -68px;
         right: 86px;
@@ -159,5 +163,9 @@
 
 .featured__slide-content-btns {
     margin-top: 37px;
+
+    @include responsive(ml) {
+        text-align: center;
+    }
 }
 

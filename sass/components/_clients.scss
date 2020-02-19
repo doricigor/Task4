@@ -1,24 +1,52 @@
 .clients{
     margin-top: 143px;
 
+    @include responsive(ml) {
+        margin-top: 100px;
+    }
+
     .slick-prev {
         top: -78px;
         right: 86px;
+
+        @include responsive(md) {
+            top: -10px;
+            right: 350px;
+        }
     }
 
     .slick-next {
         top: -78px;
         right: 3px;
+
+        @include responsive(md) {
+            top: -10px;
+            right: 250px;
+        }
     }
 
     .slick-dots {
         top: -73px;
         right: 45px;
+
+        @include responsive(ml) {
+            right: 31px;
+        }
+
+        @include responsive(md) {
+            top: -4px;
+            right: 269px;
+        }
     }
 }
 
 .clients__top-heading {
     padding-left: 13px;
+
+    @include responsive(md) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
 
 .clients__wrap {

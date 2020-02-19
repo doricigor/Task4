@@ -22,7 +22,7 @@
 .header__bottom {
     background-image: url(/img/cover.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     padding-top: 17px;
 }
@@ -31,12 +31,17 @@
     background-color: transparent;
     border-bottom: .5px solid $color-primary-light;
     padding-bottom: 16px;
+    position: relative;
 }
 
 .header__nav-container {
     display: flex;
     justify-content: space-between;
     padding-right: 9px;
+
+    @include responsive(ml) {
+        justify-content: flex-start;
+    }
 }
 
 .header__nav-logo {

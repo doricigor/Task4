@@ -1,14 +1,26 @@
 .spotlight {
     margin-top: 137px;
 
+    @include responsive(ml) {
+        margin-top: 100px;
+    }
+
     .slick-prev {
         top: -89px;
         right: 86px;
+
+        @include responsive(ml) {
+            right: 106px;
+        }
     }
 
     .slick-next {
         top: -89px;
         right: 3px;
+
+        @include responsive(ml) {
+            right: 11px;
+        }
     }
 
     .slick-dots {
@@ -117,6 +129,10 @@
 .spotlight__slide-img {
     margin: 0 auto;
     width: 100%;
+
+    @include responsive(ml) {
+        width: 80%;
+    }
 }
 
 .spotlight__slide-hover-icons {

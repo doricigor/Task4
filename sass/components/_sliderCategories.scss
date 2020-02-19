@@ -4,18 +4,24 @@
 
     .slick-prev {
         left: 49%;
+
+        @include responsive(ml) {
+            left: 47%;
+        }
     }
 
     .slick-next {
         left: 53%;
+
+        @include responsive(ml) {
+            left: 55%;
+        }
     }
 
     .slick-dots {
         bottom: -83px;
         left: 51%;
     }
-
-
 }
 
 .slider__container {
@@ -27,6 +33,10 @@
 .slider__wrap {
     padding-left: 20px;
     padding-right: 0;
+
+    @include responsive(lg) {
+        padding-left: 0;
+    }
 }
 
 .slider__box {
@@ -34,9 +44,13 @@
     position: relative;
     width: 450px;
     min-width: 250px;
-    height: 700px;
+    // height: 700px;
     flex: 1;
     transition: .3s ease;
+
+    @include responsive(lg) {
+        height: auto;
+    }
 
     &::before {
         content: '';
@@ -91,11 +105,20 @@
 
 .slider__slide {
     padding: 30px 30px 30px 47px;
+
+    @include responsive(lg) {
+        padding: 30px 20px;
+    }
 }
 
 // Fix gap on elements in slider
 .slick-slide {
-    margin: 0 16px 0 33px;
+    // margin: 0 16px 0 33px;
+    margin: 0 25px;
+}
+
+.slick-track {
+    overflow: hidden;
 }
 
 .slick-list {
@@ -106,6 +129,12 @@
     height: 350px;
     padding-top: 50px;
     margin-bottom: 20px;
+
+    @include responsive(lg) {
+        height: auto;
+        padding-top: 30px;
+        margin-bottom: 0;
+    }
 }
 
 .slideImg {
@@ -114,6 +143,18 @@
     max-width: 100%;
     margin: 0 auto;
     display: block;
+
+    @include responsive(lg) {
+        max-height: 230px;
+        width: auto;
+    }
+}
+
+.slider__slide-content {
+
+    @include responsive(lg) {
+        margin-top: 100px;
+    }
 }
 
 .slider__slide-content-top {
@@ -133,6 +174,7 @@
     font-size: 24px;
     line-height: 1;
     letter-spacing: .4px;
+    height: 100px;
 }
 
 .slider__slide-content-bottom {

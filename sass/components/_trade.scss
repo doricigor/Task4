@@ -1,10 +1,21 @@
 .trade {
     display: flex;
-    background-image: url(/img/trade.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 715px;
+    // background-image: url(/img/trade.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    height: 713px;
     margin-top: 114px;
+    position: relative;
+
+    @include responsive(ml) {
+        margin-top: 70px;
+    }
+}
+
+.trade__img {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .trade__container {
@@ -12,6 +23,7 @@
     align-items: center;
     justify-content: flex-start;
     height: auto;
+    z-index: 1;
 }
 
 .trade__content {

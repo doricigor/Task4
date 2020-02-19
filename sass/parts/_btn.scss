@@ -48,6 +48,14 @@
 
 .btn--transparent {
     background-color: transparent !important;
+
+    @include responsive(ml) {
+        width: 220px; 
+    }
+
+    @include responsive(md) {
+        margin: 0 auto;
+    }
 }
 
 .btn--dark {
@@ -278,7 +286,11 @@
 }
 
 .btn--featured-white {
-    padding: 18px 46px 18px 31px;
+    padding: 18px 46px 18px 10px;
+
+    @include responsive(ml) {
+        margin-top: 15px;
+    }
 }
 
 .btn--trade {
@@ -308,6 +320,10 @@
             position: absolute;
             top: 11px;
             right: -12px;
+
+            @include responsive(ml) {
+                right: 11px;
+            }
         }
 
         &::after {
@@ -318,6 +334,10 @@
             position: absolute;
             top: 4px;
             right: -4px;
+
+            @include responsive(ml) {
+                right: 18px;
+            }
         }
     }
 }

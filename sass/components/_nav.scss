@@ -4,6 +4,10 @@
     list-style: none;
     display: flex;
     padding: 3px 10px 0 10px;
+
+    @include responsive(ml) {
+        display: none;
+    }
 }
 
 .subNav__item {
@@ -12,10 +16,26 @@
     &:not(:last-child) {
         padding: 0 22px 0 3px;
     }
-    
+
+    &:first-child {
+        &:hover {
+            .subNav__link-res-drop {
+                display: block;
+            }
+        }   
+    }
+
+    &:last-child {
+        &:hover {
+            .subNav__link-acc-drop {
+                display: block;
+            }
+        }   
+    }
 }
 
-.subNav__link--res {
+.subNav__link-res {
+    
     position: relative;
     margin-right: 15px;
 
@@ -30,7 +50,7 @@
     }
 }
 
-.subNav__link--acc {
+.subNav__link-acc {
     position: relative;
 
     &::after {
@@ -56,8 +76,38 @@
 }
 
 
-// SubNav dropmenu
+// SubNav dropdown menu
+.subNav__link-res-drop,
+.subNav__link-acc-drop {
+    text-align: center;
+    position: absolute;
+    background-color: $color-primary-light;
+    padding-bottom: 10px;
+    z-index: 1;
+    display: none;
+}
 
+.subNav__link-res-drop-list,
+.subNav__link-acc-drop-list {
+    list-style: none;
+}
+
+.subNav__link-res-drop-item,
+.subNav__link-acc-drop-item {
+    padding: 5px 30px;
+}
+
+.subNav__link-res-drop-link,
+.subNav__link-acc-drop-link {
+    &,
+    &:link,
+    &:visited,
+    &:active {
+        color: $light-blue;
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
 
 
 // Big nav
@@ -69,6 +119,10 @@
 
     i {
         font-size: 17px;
+    }
+
+    @include responsive(ml) {
+        display: none;
     }
 }
 
@@ -120,7 +174,44 @@
 }
 
 
-
-
-
 // Small nav
+
+.miniNav {
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    transform: translateY(-50%);
+    display: none;
+
+    @include responsive(ml) {
+        display: block;
+    }
+}
+
+.miniNav-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 2px;
+    background-color: $white;
+
+    &::before {
+        content: '';
+        height: 2px;
+        width: 35px;
+        background-color: $white;
+        position: absolute;
+        top: 10px;
+    }
+
+    &::after {
+        content: '';
+        height: 2px;
+        width: 35px;
+        background-color: $white;
+        position: absolute;
+        bottom: 10px;
+    }
+}

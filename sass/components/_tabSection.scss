@@ -21,9 +21,11 @@
 
     &:first-child {
         padding-left: 25px;
+
+        @include responsive(ml) {
+            padding-left: 15px;
+        }
     }
-    
-    
 }
 
 .tabsList__link {
@@ -41,6 +43,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include responsive(ml) {
+            padding: 30px 20px;
+        }
 
         &::after {
             content: '';
@@ -95,6 +101,10 @@
 .icon-bulb {
     left: 51px;
 
+    @include responsive(ml) {
+        left: 10px;
+    }
+
     &::before {
         content: '\f0eb';
     }
@@ -103,6 +113,10 @@
 .icon-headset {
     left: 94px;
 
+    @include responsive(ml) {
+        left: 10px;
+    }
+
     &::before {
         content: '\f590';
     }
@@ -110,6 +124,10 @@
 
 .icon-tool {
     left: 75px;
+
+    @include responsive(ml) {
+        left: 10px;
+    }
 
     &::before {
         content: '\f0ad';

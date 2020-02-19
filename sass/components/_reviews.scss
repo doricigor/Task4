@@ -2,29 +2,73 @@
     padding-top: 118px;
     position: relative;
 
+    @include responsive(md) {
+        padding-top: 50px;
+    }
+
     .slick-prev {
         bottom: 35px;
         left: -245px;
+
+        @include responsive(ml) {
+            left: -185px;
+        }
+
+        @include responsive(md) {
+            top: -50px;
+            left: 322px;
+            bottom: auto;
+        }
     }
 
     .slick-next {
         bottom: 35px;
         left: -170px;
+
+        @include responsive(ml) {
+            left: -103px;
+        }
+
+        @include responsive(md) {
+            top: -50px;
+            bottom: auto;
+            left: 400px;
+        }
     }
 
     .slick-dots {
         bottom: 37px;
         left: -209px;
+
+        @include responsive(ml) {
+            left: -145px;
+        }
+
+        @include responsive(md) {
+            top: -45px;
+            bottom: auto;
+            left: 361px;
+        }
     }
 }
 
 .reviews__left-quote {
     margin-top: 20px;
+
+    @include responsive(ml) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .reviews__left-heading {
     margin-top: 47px;
     padding-left: 6px;
+
+    @include responsive(md) {
+        padding-left: 0;
+        text-align: center;
+    }
 
     h2 {
         letter-spacing: 2.1px !important;
@@ -33,12 +77,20 @@
 
 .reviews__right {
     padding-left: 0;
+
+    @include responsive(md) {
+        margin-top: 70px;
+    }
 }
 
 .reviews__slide {
     padding: 75px 45px;
     height: 449px;
     transition: .3s ease;
+
+    @include responsive(ml) {
+        padding: 25px 30px;
+    }
 
     &:hover {
         background-color: $color-primary;

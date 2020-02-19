@@ -2,10 +2,22 @@
     background-color: $color-primary;
     margin-top: 153px;
     padding-bottom: 125px;
+
+    @include responsive(ml) {
+        margin-top: 110px;
+    }
+
+    @include responsive(md) {
+        padding-bottom: 80px;
+    }
 }
 
 .green__container {
     padding-top: 60px;
+
+    @include responsive(md) {
+        padding-top: 20px;
+    }
 }
 
 .green__content {
@@ -18,6 +30,10 @@
     margin-top: 67px;
     padding-left: 7px;
 
+    @include responsive(md) {
+        text-align: center;
+    }
+
     h2 {
         color: $white !important;
     }
@@ -29,6 +45,10 @@
     margin-top: 30px;
     max-width: 440px;
 
+    @include responsive(md) {
+        padding-left: 0;
+    }
+
     p {
         margin-bottom: 35px;
     }
@@ -37,6 +57,11 @@
 .green__content-logos {
     margin-top: 47px;
     padding-left: 10px;
+
+    @include responsive(md) {
+        margin-top: 0;
+        padding-left: 0;
+    }
 
     img {
         margin-right: 35px;
@@ -54,12 +79,24 @@
     justify-content: space-between;
     padding-left: 77px;
     padding-right: 6px;
+
+    @include responsive(ml) {
+        padding-left: 20px;
+    }
+
+    @include responsive(md) {
+        margin-top: 40px;
+    }
 }
 
 .green__imgs-asl {
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    @include responsive(ml) {
+        margin-right: 11px;
+    }
 }
 
 .green__imgs-asl-text {

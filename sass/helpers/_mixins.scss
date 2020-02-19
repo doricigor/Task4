@@ -1,6 +1,7 @@
 // Media query:
 
 @mixin responsive ($breakpoint) {
+    
     @if $breakpoint==ss {
         @media only screen and (max-width: 450px) {
             @content

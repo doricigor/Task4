@@ -674,6 +674,7 @@ footer {
   position: relative;
   width: 450px;
   min-width: 250px;
+  height: 700px;
   flex: 1;
   transition: .3s ease; }
   @media only screen and (max-width: 1400px) {

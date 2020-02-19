@@ -1,0 +1,149 @@
+footer {
+    background-color: $color-primary;
+    padding-top: 93px;
+}
+
+.footer {
+    padding-bottom: 87px;
+}
+
+// Global footer title 
+.footer__title {
+    font-size: 14px;
+    color: $color-footer-light;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+// Global footer link
+
+.footer__link {
+    &,
+    &:link,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        color: $white;
+        font-family: $font-heading2;
+        font-size: 14px;
+        line-height: 2.5;
+        font-weight: 400;
+        transition: .3s ease;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__list {
+    list-style: none;
+}
+
+// Footer logo
+.footer__logo {
+    padding-left: 25px;
+}
+
+.footer__logo-img {
+    width: 96px;
+}
+
+// Footer address & social networks
+
+.footer__address-wrap {
+    width: 170px;
+    margin-left: -20px;
+}
+
+.footer__address-content {
+    margin-top: 43px;
+}
+
+.footer__address-social {
+    font-size: 20px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    width: 118px;
+    margin-top: 29px;
+
+    &-twitter,
+    &-instagram,
+    &-facebook {
+        opacity: .5;
+        transition: .3s ease;
+        cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+    }
+}
+
+// Footer nav
+
+.footer__nav-wrap {
+    padding-left: 37px;
+}
+
+.footer__nav-content {
+    margin-top: 43px;
+}
+
+// Footer contact
+
+.footer__contact-wrap {
+    padding-left: 7px;
+}
+
+.footer__contact-content {
+    margin-top: 43px;
+}
+
+// Footer subscribe
+
+.footer__sub-wrap {
+    padding-left: 32px;
+}
+
+.footer__sub-bottom {
+    display: flex;
+    margin-top: 43px;
+}
+
+.footer__sub-bottom-input {
+    background-color: $color-footer;
+    font-family: $font-heading2;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: $white;
+
+    &::placeholder {
+        color: $color-footer-light;
+        font-family: $font-heading2;
+    }
+}
+
+// Copyright
+.copyright {
+    border-top: 1px solid #252525;
+    font-size: 14px;
+    padding: 22px 0 1px;
+
+    p {
+        color: $color-footer-light;
+        margin-left: 25px;
+    }
+
+    a {
+        &,
+        &:link,
+        &:visited,
+        &:active {
+            color: $white;
+        }
+    }
+}

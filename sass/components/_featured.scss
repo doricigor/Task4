@@ -1,0 +1,163 @@
+.featured {
+    margin-top: 119px;
+
+    .slick-prev {
+        top: -68px;
+        right: 86px;
+    }
+
+    .slick-next {
+        top: -68px;
+        right: 3px;
+    }
+
+    .slick-dots {
+        top: -63px;
+        right: 45px;
+    }
+
+    .btn__icon {
+        top: 51%;
+
+        &::before {
+            top: 45%;
+        }
+
+        &::after {
+            top: 45%;
+        }
+    }
+}
+
+.featured__top {
+    padding-left: 10px;
+}
+
+.featured__top-heading {
+
+}
+
+.featured__wrap {
+    margin-top: 44px;
+}
+
+.featured__slide {
+
+}
+
+.featured__slide-img {
+    position: relative;
+    padding-left: 18px;
+    max-height: 450px;
+    padding-right: 147px;
+}
+
+.featured__slide-img-container-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.featured__slide-img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 17% 45%;
+}
+
+.featured__slide-img-container-2 {
+    position: absolute;
+    right: 33px;
+    top: 0;
+    max-width: 220px;
+    height: 100%;
+}
+
+.featured__slide-img-2 {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.featured__slide-content {
+    padding: 28px 0 0;
+    margin-left: -9px;
+}
+
+.featured__slide-content-top-title {
+    font-size: 30px;
+    font-family: $font-heading2;
+    color: $color-primary-light;
+    display: block;
+    line-height: 1.2;
+}
+
+.featured__slide-content-text {
+    font-size: 18px;
+    color: $color-primary-light;
+    margin-top: 26px;
+}
+
+.featured__slide-content-fixture {
+    margin-top: 41px;
+}
+
+.featured__slide-content-fixture-title {
+    font-size: 16px;
+    color: $color-primary-light;
+}
+
+.featured__slide-content-fixture-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: $font-heading2;
+    color: $color-primary-light;
+    margin-top: 18px;
+}
+
+.featured__slide-content-fixture-items-rfba{
+    flex: 1;
+    margin-right: 32px;
+}
+
+.featured__slide-content-fixture-items-acrylic {
+    position: relative;
+    padding-left: 43px;
+    flex: 2;
+
+    &::before {
+        content: '';
+        background-image: url(/img/acrylic.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.featured__slide-content-fixture-items-stell {
+    position: relative;
+    padding-left: 45px;
+    flex: 2;
+    margin-right: 15px;
+
+    &::before {
+        content: '';
+        background-image: url(/img/steel.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.featured__slide-content-btns {
+    margin-top: 37px;
+}
+

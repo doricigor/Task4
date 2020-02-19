@@ -40,6 +40,14 @@
     position: absolute;
     background-color: transparent;
 
+    &:hover {
+
+        &::after {
+            background-image: url('/img/circle-color.png');
+            border: none;
+        }
+    }
+
     // Arrow
     &::before {
         content: '\f060';
@@ -70,6 +78,14 @@
 .slick-next {
     position: absolute;
     background-color: transparent;
+
+    &:hover {
+
+        &::after {
+            background-image: url('/img/circle-color.png');
+            border: none;
+        }
+    }
 
     // Arrow
     &::before {

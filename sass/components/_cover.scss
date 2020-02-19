@@ -1,10 +1,11 @@
 .cover {
-    margin-top: 112px;
-    padding-bottom: 137px;
+    margin-top: 108px;
+    padding-bottom: 143px;
 }
 
 .cover__info {
     padding-left: 24px;
+    max-width: 660px;
 }
 
 .cover__info-span {
@@ -19,7 +20,7 @@
 }
 
 .cover__info-btn {
-    margin-top: 53px;
+    margin-top: 45px;
     padding-top: 6px;
     height: 70px;
     display: flex;

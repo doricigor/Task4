@@ -1,0 +1,43 @@
+.trade {
+    display: flex;
+    background-image: url(/img/trade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 715px;
+    margin-top: 114px;
+}
+
+.trade__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+}
+
+.trade__content {
+    max-width: 650px;
+    height: auto;
+    padding-top: 53px;
+}
+
+.trade__content-heading {
+    padding-left: 5px;
+    padding-bottom: 37px;
+
+    h2 {
+        color: $white;
+    }
+}
+
+.trade__content-text {
+    padding-left: 6px;
+    
+    p {
+        color: $white;
+    }
+}
+
+.trade__content-btn {
+    margin-top: 81px;
+    padding-left: 10px;
+}

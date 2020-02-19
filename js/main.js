@@ -106,7 +106,7 @@ $(document).ready(function() {
       $('.clients__wrap').slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -137,6 +137,17 @@ $(document).ready(function() {
             }
           }
         ]
+      });
+
+      // Slick slider for featured
+
+      $('.featured__wrap').slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: false,
+        speed: 300
       });
 
 });

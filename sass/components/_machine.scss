@@ -1,0 +1,35 @@
+.machine {
+    display: flex;
+    background-image: url(/img/machine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 655px;
+    margin-top: 103px;
+}
+
+.machine__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+}
+
+.machine__content {
+    max-width: 560px;
+}
+
+.machine__content-heading {
+    margin-bottom: 45px;
+    padding-left: 5px;
+    max-width: 400px;
+}
+
+.machine__content-text {
+    margin-bottom: 41px;
+    padding-left: 8px;
+    padding-right: 30px;
+}
+
+.machine__content-btn {
+    padding-left: 12px;
+}

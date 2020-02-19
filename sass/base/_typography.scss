@@ -9,20 +9,31 @@
 }
 
 @font-face {
-    src:('../fonts/BigSquareDots.ttf');
-    font-family: 'BigSquareDots';
+    font-family: "Geogrotesque Regular";
+    src: url('/fonts/Geogrotesque.otf'); 
+}
+
+@font-face {
+    font-family: 'LediZst';
+    src: url('/fonts/LedizSt.ttf');
 }
 
 $font-primary: 'Lato', sans-serif;
-$icons: "Font Awesome 5 Pro";
-$font-heading1: "BigSquareDots", sans-serif;
+$font-heading1: "LediZst";
 $font-heading2: 'Circular Std';
+$icons: "Font Awesome 5 Pro";
+$rfba: "Geogrotesque Regular";
 
 .heading-1 {
     font-size: 54px;
+    line-height: 1.31;
     font-weight: 500;
     font-family: $font-heading1;
     text-transform: uppercase;
+    background: $gradient2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .heading-2 {

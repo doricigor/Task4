@@ -1,6 +1,7 @@
 // Common class for btn and slidebtn
 .btn,
-.slideBtn {
+.slideBtn,
+.btnWhite {
     outline: none !important;
 
     &,
@@ -45,7 +46,39 @@
     }
 }
 
-// Btn classes
+.btn--transparent {
+    background-color: transparent !important;
+}
+
+.btn--dark {
+    background-color: $color-primary !important;
+}
+
+.btnWhite {
+    border-radius: 0;
+    color: $color-primary-light;
+    background-color: transparent;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    &:hover {
+
+        color: $color-primary-light;
+        
+        .btnWhite__icon::before {
+            top: 31%;
+            transition: .3s ease;
+        }
+
+        .btnWhite__icon::after {
+            width: 0;
+            transition: .3s ease;
+        }
+
+    }
+}
+
+// Btn classes - delete on the end TODO
 .btn--icon-left {
     padding: 18px 20px 18px 63px;
 }
@@ -153,23 +186,14 @@
 }
 
 // Icon in slideBtn
-.slideIcon {
+.slideIcon,
+.btnWhite__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 29px;
     transition: .3s ease;
     color: $silver;
-
-    img {
-        &:last-child {
-            display: none;
-        }
-
-        &:first-child {
-            display: block;
-        }
-    }
 
     &::before {
         content: '';
@@ -194,6 +218,34 @@
     }
 }
 
+.btnWhite__icon {
+    top: 50%;
+    right: 2px;
+    left: auto;
+
+    &::before {
+        top: 45%;
+    }
+
+    &::after {
+        top: 45%;
+    }
+}
+
+.slideIcon {
+
+    img {
+        &:last-child {
+            display: none;
+        }
+
+        &:first-child {
+            display: block;
+        }
+    }
+}
+
+
 // Single btn class
 .btn--finder {
     font-weight: bold;
@@ -216,6 +268,23 @@
 .btn--green {
     padding: 18px 60px 18px 39px;
 }
+
+.btn--machine {
+    padding: 18px 78px 18px 23px;
+}
+
+.btn--featured {
+    padding: 18px 63px 18px 33px;
+}
+
+.btn--featured-white {
+    padding: 18px 46px 18px 31px;
+}
+
+.btn--trade {
+    padding: 18px 71px 18px 26px;
+}
+
 
 .reviews__slide-bottom-btn {
     &,

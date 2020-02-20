@@ -15,6 +15,10 @@
     color: $light-blue;
     padding: 6px 9px 8px 9px;
     letter-spacing: .6px;
+
+    @include responsive(ss) {
+        font-size: 13px;
+    }
 }
 
 // Header bottom
@@ -51,4 +55,8 @@
 .header__nav-finder {
     padding-top: 10px;
     margin-left: 48px;
+
+    @include responsive(xs) {
+        display: none;
+    }
 }

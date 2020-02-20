@@ -1,11 +1,9 @@
 .trade {
     display: flex;
-    // background-image: url(/img/trade.jpg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
     height: 713px;
     margin-top: 114px;
     position: relative;
+    background-color: $color-footer;
 
     @include responsive(ml) {
         margin-top: 70px;
@@ -14,8 +12,12 @@
 
 .trade__img {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 11px;
+    right: -66px;
+
+    @include responsive(lg) {
+        right: 0;
+    }
 }
 
 .trade__container {
@@ -24,12 +26,18 @@
     justify-content: flex-start;
     height: auto;
     z-index: 1;
+    position: relative;
+
+    @include responsive(md) {
+        justify-content: center;
+    }
 }
 
 .trade__content {
     max-width: 650px;
     height: auto;
     padding-top: 53px;
+    z-index: 1;
 }
 
 .trade__content-heading {
@@ -46,6 +54,10 @@
     
     p {
         color: $white;
+
+        @include responsive(xs) {
+            color: $color-primary;
+        }
     }
 }
 

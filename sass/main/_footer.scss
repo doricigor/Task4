@@ -213,6 +213,10 @@ footer {
         padding: 14px 0;
     }
 
+    @include responsive(xs) {
+        font-size: 12px;
+    }
+
     p {
         color: $color-footer-light;
         margin-left: 25px;

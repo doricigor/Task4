@@ -1,11 +1,29 @@
 .cover {
     margin-top: 108px;
     padding-bottom: 143px;
+
+    @include responsive(ss) {
+        padding-bottom: 70px;
+        margin-top: 40px;       
+    }
 }
 
 .cover__info {
     padding-left: 24px;
     max-width: 660px;
+
+    @include responsive(sm) {
+        padding-left: 0;
+    }
+
+    @include responsive(xs) {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    @include responsive(ss) {
+        padding-left: 8px;
+    }
 }
 
 .cover__info-span {
@@ -26,12 +44,22 @@
     display: flex;
     align-items: center;
 
+    @include responsive(xs) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     span {
         font-size: 18px;
         color: $white;
         font-weight: normal;
         letter-spacing: .8px;
         margin-right: 40px;
+
+        @include responsive(xs) {
+            margin-bottom: 25px;
+        }
     }
 
 }

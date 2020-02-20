@@ -2,12 +2,29 @@
     padding: 0;
     margin-bottom: 165px;
 
+    @include responsive(lg) {
+        margin-bottom: 0px;
+    }
+
     .slick-prev {
         left: 49%;
 
         @include responsive(ml) {
             left: 47%;
         }
+
+        @include responsive(md) {
+            left: 45%;
+        }
+
+        @include responsive(sm) {
+            left: 43%;
+        }
+
+        @include responsive(xs) {
+            left: 40%;
+        }
+
     }
 
     .slick-next {
@@ -15,6 +32,19 @@
 
         @include responsive(ml) {
             left: 55%;
+        }
+
+        @include responsive(md) {
+            left: 57%;
+        }
+
+        @include responsive(sm) {
+            left: 59%;
+        }
+
+        @include responsive(xs) {
+            right: 35%;
+            left: auto;
         }
     }
 
@@ -27,15 +57,24 @@
 .slider__container {
     width: 100%;
     max-width: 1870px;
-    margin: 72px 0 0 0;
+    margin: 72px auto 0 auto;
+}
+
+.slider__fluid {
+    height: 800px;
+    overflow: hidden;
+
+    @include responsive(md) {
+        height: 730px;   
+    }
 }
 
 .slider__wrap {
-    padding-left: 20px;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @include responsive(lg) {
-        padding-left: 0;
+        padding-left: 7px;
     }
 }
 
@@ -113,8 +152,11 @@
 
 // Fix gap on elements in slider
 .slick-slide {
-    // margin: 0 16px 0 33px;
     margin: 0 25px;
+
+    @include responsive(lg) {
+        margin: 0 15px;
+    }
 }
 
 .slick-track {
@@ -131,9 +173,9 @@
     margin-bottom: 20px;
 
     @include responsive(lg) {
-        height: auto;
         padding-top: 30px;
         margin-bottom: 0;
+        height: 280px;
     }
 }
 
@@ -153,7 +195,7 @@
 .slider__slide-content {
 
     @include responsive(lg) {
-        margin-top: 100px;
+        margin-top: 25px;
     }
 }
 
@@ -161,11 +203,24 @@
     height: 125px;
     margin-bottom: 25px;
     margin-top: 67px;
+
+    @include responsive(lg) {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 }
 
 .slideHeading {
     margin-bottom: 15px;
     letter-spacing: .7px;
+
+    @include responsive(lg) {
+        height: 110px;
+    }
+
+    @include responsive(ss) {
+        height: 90px;       
+    }
 }
 
 .slideDesc {
@@ -175,10 +230,18 @@
     line-height: 1;
     letter-spacing: .4px;
     height: 100px;
+
+    @include responsive(lg) {
+        margin-top: 5px;
+    }
 }
 
 .slider__slide-content-bottom {
     margin-top: 35px;
     position: relative;
+
+    @include responsive(lg) {
+        margin-top: 60px;
+    }
 }
 

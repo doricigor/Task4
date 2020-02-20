@@ -1,8 +1,13 @@
 .clients{
     margin-top: 143px;
+    overflow: hidden;
 
     @include responsive(ml) {
         margin-top: 100px;
+    }
+
+    @include responsive(md) {
+        margin-top: 70px;
     }
 
     .slick-prev {
@@ -13,6 +18,16 @@
             top: -10px;
             right: 350px;
         }
+
+        @include responsive(sm) {
+            right: 295px;
+            top: -24px;
+        }
+
+        @include responsive(xs) {
+            right: auto;
+            left: 40%;
+        }
     }
 
     .slick-next {
@@ -22,6 +37,15 @@
         @include responsive(md) {
             top: -10px;
             right: 250px;
+        }
+
+        @include responsive(sm) {
+            right: 161px;
+            top: -24px;
+        }
+
+        @include responsive(xs) {
+            right: 35%;
         }
     }
 
@@ -37,6 +61,15 @@
             top: -4px;
             right: 269px;
         }
+
+        @include responsive(sm) {
+            top: -20px;
+            right: 181px;
+        }
+
+        @include responsive(xs) {
+            right: 108px;
+        }
     }
 }
 
@@ -46,6 +79,10 @@
     @include responsive(md) {
         text-align: center;
         padding-bottom: 20px;
+    }
+
+    @include responsive(sm) {
+        padding-left: 0;
     }
 }
 

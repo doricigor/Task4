@@ -49,8 +49,13 @@
 .btn--transparent {
     background-color: transparent !important;
 
+    @include responsive(lg) {
+        padding: 18px 5px 18px 56px !important;
+    }
+
     @include responsive(ml) {
         width: 220px; 
+        padding: 18px 20px 18px 63px;
     }
 
     @include responsive(md) {
@@ -231,6 +236,10 @@
     right: 2px;
     left: auto;
 
+    @include responsive(ss) {
+        right: 17px;
+    }
+
     &::before {
         top: 45%;
     }
@@ -283,6 +292,11 @@
 
 .btn--featured {
     padding: 18px 63px 18px 33px;
+
+    @include responsive(ss) {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 
 .btn--featured-white {
@@ -290,6 +304,11 @@
 
     @include responsive(ml) {
         margin-top: 15px;
+    }
+
+    @include responsive(ss) {
+        width: 50%;
+        margin: 10px auto 0 auto;
     }
 }
 

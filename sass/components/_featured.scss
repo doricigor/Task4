@@ -1,23 +1,68 @@
 .featured {
     margin-top: 119px;
+    overflow: hidden;
 
     @include responsive(ml) {
         margin-top: 80px;
     }
 
+    @include responsive(xs) {
+        margin-top: 30px;       
+    }
+
     .slick-prev {
         top: -68px;
         right: 86px;
+
+        @include responsive(md) {
+            top: -83px;
+        }
+
+        @include responsive(sm) {
+            top: -42px;
+            right: 262px;
+        }
+
+        @include responsive(xs) {
+            right: auto;
+            left: 40%;
+        }
     }
 
     .slick-next {
         top: -68px;
         right: 3px;
+
+        @include responsive(md) {
+            top: -83px;
+        }
+
+        @include responsive(sm) {
+            right: 183px;
+            top: -42px;
+        }
+
+        @include responsive(xs) {
+            right: 35%;
+        }
     }
 
     .slick-dots {
         top: -63px;
         right: 45px;
+
+        @include responsive(md) {
+            top: -76px;
+        }
+
+        @include responsive(sm) {
+            right: 226px;
+            top: -36px;
+        }
+
+        @include responsive(xs) {
+            right: 241px;
+        }
     }
 
     .btn__icon {
@@ -35,18 +80,24 @@
 
 .featured__top {
     padding-left: 10px;
+
+    @include responsive(sm) {
+        padding-left: 0;
+    }
 }
 
 .featured__top-heading {
-
+    @include responsive(sm) {
+        text-align: center;
+    }
 }
 
 .featured__wrap {
     margin-top: 44px;
-}
 
-.featured__slide {
-
+    @include responsive(sm) {
+        margin-top: 65px;
+    }
 }
 
 .featured__slide-img {
@@ -60,6 +111,10 @@
     width: 100%;
     height: 100%;
     position: relative;
+
+    @include responsive(ss) {
+        width: 250px;       
+    }
 }
 
 .featured__slide-img-1 {
@@ -67,6 +122,10 @@
     height: 100%;
     object-fit: none;
     object-position: 17% 45%;
+
+    @include responsive(ss) {
+        object-fit: cover;       
+    }
 }
 
 .featured__slide-img-container-2 {
@@ -75,6 +134,14 @@
     top: 0;
     max-width: 220px;
     height: 100%;
+
+    @include responsive(sm) {
+        max-width: 140px;
+    }
+
+    @include responsive(ss) {
+        width: 50px;       
+    }
 }
 
 .featured__slide-img-2 {
@@ -87,6 +154,11 @@
 .featured__slide-content {
     padding: 28px 0 0;
     margin-left: -9px;
+
+    @include responsive(md) {
+        text-align: center;
+        margin-left: auto;
+    }
 }
 
 .featured__slide-content-top-title {
@@ -95,16 +167,33 @@
     color: $color-primary-light;
     display: block;
     line-height: 1.2;
+
+    @include responsive(xs) {
+        font-size: 25px;
+    }
+
+    @include responsive(ss) {
+        font-size: 20px;       
+    }
 }
 
 .featured__slide-content-text {
     font-size: 18px;
     color: $color-primary-light;
     margin-top: 26px;
+
+    @include responsive(xs) {
+        font-size: 16px;
+        padding: 0 35px;
+    }
 }
 
 .featured__slide-content-fixture {
     margin-top: 41px;
+
+    @include responsive(md) {
+        margin-top: 20px;   
+    }
 }
 
 .featured__slide-content-fixture-title {
@@ -119,17 +208,30 @@
     font-family: $font-heading2;
     color: $color-primary-light;
     margin-top: 18px;
+
+    @include responsive(ss) {
+        flex-direction: column;       
+    }
 }
 
 .featured__slide-content-fixture-items-rfba{
     flex: 1;
     margin-right: 32px;
+
+    @include responsive(ss) {
+        margin-right: 0vh;       
+    }
 }
 
 .featured__slide-content-fixture-items-acrylic {
     position: relative;
     padding-left: 43px;
     flex: 2;
+
+    @include responsive(md) {
+        flex: 1;
+        padding-left: 0;
+    }
 
     &::before {
         content: '';
@@ -140,6 +242,10 @@
         width: 30px;
         top: 0;
         left: 0;
+
+        @include responsive(ss) {
+            left: 70px;   
+        }
     }
 }
 
@@ -148,6 +254,12 @@
     padding-left: 45px;
     flex: 2;
     margin-right: 15px;
+
+    @include responsive(md) {
+        flex: 1;
+        padding-left: 0;
+        margin-right: 0;
+    }
 
     &::before {
         content: '';
@@ -158,6 +270,10 @@
         width: 30px;
         top: 0;
         left: 0;
+
+        @include responsive(ss) {
+            left: 70px;   
+        }
     }
 }
 
@@ -166,6 +282,15 @@
 
     @include responsive(ml) {
         text-align: center;
+    }
+
+    @include responsive(md) {
+        margin-top: 20px;
+    }
+
+    @include responsive(ss) {
+        display: flex;
+        flex-direction: column;
     }
 }
 

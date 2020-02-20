@@ -1,21 +1,39 @@
 .machine {
     display: flex;
-    // background-image: url(/img/machine.jpg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
     height: 655px;
     margin-top: 103px;
     position: relative;
+    background-color: $yellow;
 
     @include responsive(ml) {
         margin-top: 70px;
+    }
+
+    @include responsive(md) {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    @include responsive(ss) {
+        margin-top: 15px;       
     }
 }
 
 .machine__img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 56px;
+    left: -74px;
+
+    @include responsive(ml) {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 500px;
+    }
+
+    @include responsive(sm) {
+        width: 100%;
+    }
 }
 
 .machine__container {
@@ -24,22 +42,48 @@
     justify-content: flex-end;
     height: auto;
     z-index: 1;
+    position: relative;
+
+    @include responsive(md) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 .machine__content {
     max-width: 560px;
+    z-index: 1;
+
+    @include responsive(ml) {
+        text-align: end;
+    }
+
+    @include responsive(md) {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
 }
 
 .machine__content-heading {
     margin-bottom: 45px;
     padding-left: 5px;
     max-width: 400px;
+
+    @include responsive(md) {
+        max-width: 100%;
+        padding-left: 0;
+    }
 }
 
 .machine__content-text {
     margin-bottom: 41px;
     padding-left: 8px;
     padding-right: 30px;
+
+    @include responsive(md) {
+        padding: 0;
+    }
 }
 
 .machine__content-btn {

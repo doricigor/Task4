@@ -33,17 +33,18 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              dots: false
             }
           }
         ]
@@ -55,7 +56,7 @@ $(document).ready(function() {
       $('.spotlight__wrap').slick({
         dots: true,
         arrows: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -70,10 +71,11 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              dots: false
             }
           }
         ]
@@ -84,7 +86,7 @@ $(document).ready(function() {
       $('.reviews__wrap').slick({
         dots: true,
         arrows: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -92,10 +94,11 @@ $(document).ready(function() {
         slidesToScroll: 2,
         responsive: [
           {
-            breakpoint: 480,
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              dots: false
             }
           }
         ]
@@ -132,17 +135,18 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              dots: false
             }
           }
         ]
@@ -156,7 +160,33 @@ $(document).ready(function() {
         // autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
-        speed: 300
+        speed: 300,
+        responsive: [
+          {
+            breakpoint:576,
+            settings: {
+              dots: false
+            }
+          }
+        ]
       });
+
+      // Sticky on scroll
+
+      window.onscroll = function() {
+        toggleSticky();
+      }
+
+      const navbar = document.querySelector('.header__nav');
+
+      const sticky = navbar.offsetTop;
+
+      function toggleSticky() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
 
 });

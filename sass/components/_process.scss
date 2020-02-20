@@ -4,21 +4,37 @@
     height: 722px;
     display: flex;
     align-items: center;
+    background-color: $silver2;
+    overflow-x: hidden;
 
     @include responsive(md) {
         margin-top: 60px;
+    }
+
+    @include responsive(sm) {
+        height: 500px;
     }
 }
 
 .process__wrap {
     display: flex;
     justify-content: flex-end;
+
+    @include responsive(md) {
+        justify-content: center;
+    }
 }
 
 .process__img {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+
+    @include responsive(ml) {
+        width: auto;
+    }
 }
 
 .process__content {
@@ -38,4 +54,8 @@
     line-height: 1.5;
     font-weight: 400;
     margin-bottom: 76px;
+
+    @include responsive(ss) {
+        margin-bottom: 40px;       
+    }
 }

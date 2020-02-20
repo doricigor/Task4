@@ -15,7 +15,7 @@
     };
 
     @if $breakpoint==sm {
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
             @content
         }
     };
@@ -33,7 +33,7 @@
     };
 
     @if $breakpoint==lg {
-        @media only screen and (max-width: 1400px) {
+        @media only screen and (max-width: 1455px) {
             @content
         }
     };

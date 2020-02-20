@@ -1,6 +1,7 @@
 .reviews {
     padding-top: 118px;
     position: relative;
+    overflow: hidden;
 
     @include responsive(md) {
         padding-top: 50px;
@@ -16,8 +17,16 @@
 
         @include responsive(md) {
             top: -50px;
-            left: 322px;
+            left: 300px;
             bottom: auto;
+        }
+        
+        @include responsive(sm) {
+            left: 221px;
+        }
+
+        @include responsive(xs) {
+            left: 40%;
         }
     }
 
@@ -32,7 +41,16 @@
         @include responsive(md) {
             top: -50px;
             bottom: auto;
-            left: 400px;
+            left: 394px;
+        }
+
+        @include responsive(sm) {
+            left: 300px;
+        }
+
+        @include responsive(xs) {
+            right: 35%;
+            left: auto;
         }
     }
 
@@ -47,7 +65,11 @@
         @include responsive(md) {
             top: -45px;
             bottom: auto;
-            left: 361px;
+            left: 348px;
+        }
+
+        @include responsive(sm) {
+            left: 258px;
         }
     }
 }
@@ -68,6 +90,7 @@
     @include responsive(md) {
         padding-left: 0;
         text-align: center;
+        margin-top: 30px;
     }
 
     h2 {
@@ -80,6 +103,7 @@
 
     @include responsive(md) {
         margin-top: 70px;
+        padding-left: 15px;
     }
 }
 
@@ -90,6 +114,14 @@
 
     @include responsive(ml) {
         padding: 25px 30px;
+    }
+
+    @include responsive(xs) {
+        padding: 55px;
+    }
+
+    @include responsive(ss) {
+        padding: 40px;
     }
 
     &:hover {

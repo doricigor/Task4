@@ -215,3 +215,15 @@
         bottom: 10px;
     }
 }
+
+
+// Sticky navbar 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $color-primary;
+    padding-top: 20px;
+    z-index: 100;
+}

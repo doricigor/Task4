@@ -1,8 +1,13 @@
 .spotlight {
     margin-top: 137px;
+    overflow: hidden;
 
     @include responsive(ml) {
         margin-top: 100px;
+    }
+
+    @include responsive(xs) {
+        margin-top: 50px;
     }
 
     .slick-prev {
@@ -11,6 +16,17 @@
 
         @include responsive(ml) {
             right: 106px;
+        }
+
+        @include responsive(sm) {
+            top: -45px;
+            right: 276px;
+        }
+
+        @include responsive(xs) {
+            right: auto;
+            left: 40%;
+            top: -56px;
         }
     }
 
@@ -21,17 +37,49 @@
         @include responsive(ml) {
             right: 11px;
         }
+
+        @include responsive(sm) {
+            top: -45px;
+            right: 176px;
+        }
+
+        @include responsive(xs) {
+            top: -56px;
+            right: 35%;
+        }
     }
 
     .slick-dots {
         top: -83px;
         right: 45px;
+
+        @include responsive(sm) {
+            top: -39px;
+            right: 209px;
+        }
+
+        @include responsive(xs) {
+            right: 181px;
+            top: -51px;
+        }
+    }
+}
+
+.spotlight__top-heading {
+    
+    @include responsive(xs) {
+        text-align: center;
+        padding-bottom: 10px;       
     }
 }
 
 .spotlight__wrap {
     margin-top: 50px;
     position: relative;
+
+    @include responsive(sm) {
+        margin-top: 70px;
+    }
 }
 
 .spotlight__slide {
@@ -39,6 +87,14 @@
     padding: 27px 25px 42px;
     height: 404px;
     transition: .3s ease;
+
+    @include responsive(sm) {
+       padding: 27px 25px 30px;
+    }
+
+    @include responsive(xs) {
+        padding: 31px 47px 30px;
+    }
 
     &:hover {
         background-color: $color-primary-light;
@@ -84,6 +140,15 @@
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
+
+    @include responsive(sm) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @include responsive(xs) {
+        flex-direction: row;
+    }
 }
 
 .spotlight-rfba {
@@ -124,6 +189,10 @@
     left: 50%;
     top: 46%;
     transform: translate(-50%, -50%);
+
+    @include responsive(sm) {
+        top: 54%;
+    }
 }
 
 .spotlight__slide-img {
@@ -133,6 +202,10 @@
     @include responsive(ml) {
         width: 80%;
     }
+
+    @include responsive(xs) {
+        width: 70%;
+    }
 }
 
 .spotlight__slide-hover-icons {
@@ -141,6 +214,20 @@
     top: 50%;
     transform: translateY(-50%);
     display: none;
+
+    @include responsive(sm) {
+        right: -7px;
+        top: 57%;
+    }
+
+    @include responsive(xs) {
+        right: 12px;
+        top: 50%;
+    }
+
+    @include responsive(ss) {
+        right: 0;       
+    }
 
     img {
         padding: 15px 0;
@@ -203,12 +290,33 @@
 .spotlight__slide-bottom {
     display: flex;
     justify-content: space-between;
+
+    @include responsive(sm) {
+       flex-direction: column;
+       text-align: center;
+    }
+
+    @include responsive(xs) {
+        flex-direction: row;
+    }
+
+    @include responsive(ss) {
+        flex-direction: column;
+    }
 }
 
 .spotlight__slide-bottom-left {
     font-size: 16px;
     font-weight: 600;
     padding-left: 13px;
+
+    @include responsive(sm) {
+        padding-left: 0;
+    }
+
+    @include responsive(xs) {
+        padding-left: 13px;
+    }
 }
 
 .spotlight__slide-bottom-acrylic {
@@ -230,6 +338,14 @@
 .spotlight__slide-bottom-right {
     font-size: 16px;
     font-weight: 600;
+
+    @include responsive(sm) {
+       margin-top: 10px;
+    }
+
+    @include responsive(xs) {
+        margin-top: 0;
+    }
 }
 
 .spotlight__slide-bottom-steel {

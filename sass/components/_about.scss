@@ -1,6 +1,10 @@
 .about {
     max-width: 1620px;
     margin-top: 118px;
+
+    @include responsive(lg) {
+        margin-top: 30px;
+    }
 }
 
 .about__row {
@@ -55,6 +59,10 @@
     @include responsive(md) {
         right: 200px;
     }
+
+    @include responsive(sm) {
+        right: 0;
+    }
 }
  
 .about__content-heading {
@@ -74,6 +82,10 @@
 
 .about__content-btn {
     margin-top: 70px;
+
+    @include responsive(md) {
+        margin-top: 30px;
+    }
 }
 
 // Right side - images
@@ -84,6 +96,7 @@
 
     @include responsive(md) {
         max-width: 100%;
+        margin-top: 30px;
     }
 }
 
@@ -95,10 +108,6 @@
 .about__imgs-right {
     display: flex;
     flex-wrap: wrap;
-
-    @include responsive(md) {
-        flex-wrap: nowrap;
-    }
 }
 
 .about__imgs--1 {
@@ -107,6 +116,15 @@
 
     @include responsive(md) {
         min-width: 170px;
+    }
+
+    @include responsive(sm) {
+        min-width: 150px;
+    }
+
+    @include responsive(ss) {
+        max-width: 120px;
+        min-width: 100px;
     }
 
     img {
@@ -123,7 +141,8 @@
     margin-bottom: 20px;
 
     @include responsive(md) {
-        margin-right: 20px;
+        width: 50%;
+        margin-right: 2%;
     }
 
     img {
@@ -136,7 +155,15 @@
     padding-right: 25px;
 
     @include responsive(md) {
-        padding-right: 20px;
+        width: 39%;
+    }
+
+    @include responsive(sm) {
+        width: 43%;
+    }
+
+    @include responsive(sm) {
+        width: 48%;
     }
 
     img {
@@ -146,6 +173,14 @@
 
 .about__imgs--4 {
     width: 50%;
+
+    @include responsive(md) {
+        width: 70%;
+    }
+
+    @include responsive(sm) {
+        width: 76%;
+    }
 
     img {
         max-width: 100%;

@@ -68,6 +68,10 @@
     .btn__icon {
         top: 51%;
 
+        @media only screen and (max-width: 400px) {
+            right: 13px;
+        }
+
         &::before {
             top: 45%;
         }
@@ -105,16 +109,16 @@
     padding-left: 18px;
     max-height: 450px;
     padding-right: 147px;
+
+    @include responsive(sm) {
+        padding-top: 15px;
+    }
 }
 
 .featured__slide-img-container-1 {
     width: 100%;
     height: 100%;
     position: relative;
-
-    @include responsive(ss) {
-        width: 250px;       
-    }
 }
 
 .featured__slide-img-1 {
@@ -140,7 +144,7 @@
     }
 
     @include responsive(ss) {
-        width: 50px;       
+        max-width: 100px;       
     }
 }
 
@@ -149,6 +153,10 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+
+    @include responsive(ss) {
+        width: 90%; 
+    }
 }
 
 .featured__slide-content {
@@ -214,7 +222,7 @@
     }
 }
 
-.featured__slide-content-fixture-items-rfba{
+.featured__slide-content-fixture-items-rfba {
     flex: 1;
     margin-right: 32px;
 

@@ -164,6 +164,14 @@
     &:visited {
         padding: 18px 60px 18px 0;
         color: $color-primary-light;
+
+        @include responsive(sx) {
+            padding: 18px 25px 18px 0;
+        }
+
+        @media only screen and (max-width: 350px) {
+            padding: 18px 48px 18px 0;
+        }
         
         &:hover {
             
@@ -176,7 +184,6 @@
                 width: 0;
                 transition: .3s ease;
             }
-    
         }
     }
 
@@ -240,6 +247,10 @@
         right: 17px;
     }
 
+    @media only screen and (max-width: 400px) {
+        right: 0;
+    }
+
     &::before {
         top: 45%;
     }
@@ -251,6 +262,14 @@
 
 .slideIcon {
 
+    @include responsive(sx) {
+        right: -15px;
+    }
+
+    @media only screen and (max-width: 350px) {
+        right: 5px;
+    }
+
     img {
         &:last-child {
             display: none;
@@ -261,7 +280,6 @@
         }
     }
 }
-
 
 // Single btn class
 .btn--finder {
@@ -297,6 +315,11 @@
         width: 50%;
         margin: 0 auto;
     }
+
+    @media only screen and (max-width: 400px) {
+        padding: 18px 35px 18px 0;
+        width: 55%;
+    }
 }
 
 .btn--featured-white {
@@ -310,12 +333,15 @@
         width: 50%;
         margin: 10px auto 0 auto;
     }
+
+    @media only screen and (max-width: 400px) {
+        padding: 18px 35px 18px 0;
+    }
 }
 
 .btn--trade {
     padding: 18px 71px 18px 26px;
 }
-
 
 .reviews__slide-bottom-btn {
     &,

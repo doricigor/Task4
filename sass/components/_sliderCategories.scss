@@ -1,6 +1,5 @@
 .slider {
     padding: 0;
-    margin-bottom: 165px;
 
     @include responsive(lg) {
         margin-bottom: 0px;
@@ -24,7 +23,6 @@
         @include responsive(xs) {
             left: 40%;
         }
-
     }
 
     .slick-next {
@@ -142,11 +140,16 @@
     }
 }
 
+
 .slider__slide {
     padding: 30px 30px 30px 47px;
 
     @include responsive(lg) {
         padding: 30px 20px;
+    }
+
+    @include responsive(md) {
+        padding: 30px 40px;
     }
 }
 
@@ -177,6 +180,10 @@
         margin-bottom: 0;
         height: 280px;
     }
+
+    @include responsive(sx) {
+        padding-top: 0;
+    }
 }
 
 .slideImg {
@@ -197,6 +204,10 @@
     @include responsive(lg) {
         margin-top: 25px;
     }
+
+    @include responsive(sx) {
+        margin-top: 0;
+    }
 }
 
 .slider__slide-content-top {
@@ -207,6 +218,11 @@
     @include responsive(lg) {
         margin-top: 20px;
         margin-bottom: 0;
+    }
+
+    @include responsive(sx) {
+        margin-top: 0;
+        height: auto;
     }
 }
 
@@ -221,6 +237,10 @@
     @include responsive(ss) {
         height: 90px;       
     }
+
+    @include responsive(sx) {
+        margin-bottom: 0;
+    }
 }
 
 .slideDesc {
@@ -234,14 +254,24 @@
     @include responsive(lg) {
         margin-top: 5px;
     }
+
+    @include responsive(sx) {
+        margin-top: 0;
+    }
 }
 
 .slider__slide-content-bottom {
     margin-top: 35px;
     position: relative;
+    padding-left: 8px;
 
     @include responsive(lg) {
         margin-top: 60px;
+        padding-left: 0;
+    }
+
+    @include responsive(sx) {
+        margin-top: 0;
     }
 }
 

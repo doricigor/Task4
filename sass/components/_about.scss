@@ -5,10 +5,13 @@
     @include responsive(lg) {
         margin-top: 30px;
     }
+
+    @include responsive(sm) {
+        margin-top: 0;
+    }
 }
 
 .about__row {
-    padding-top: 50px;
 
     @include responsive(lg) {
         align-items: center;

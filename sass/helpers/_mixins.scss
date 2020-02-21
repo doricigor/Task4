@@ -14,6 +14,12 @@
         }
     };
 
+    @if $breakpoint==sx {
+        @media only screen and (max-width: 660px) {
+            @content
+        }
+    };
+
     @if $breakpoint==sm {
         @media only screen and (max-width: 767px) {
             @content

@@ -55,7 +55,7 @@
     p {
         color: $white;
 
-        @include responsive(xs) {
+        @include responsive(sm) {
             color: $color-primary;
         }
     }

@@ -87,8 +87,11 @@
     margin-top: 47px;
     padding-left: 6px;
 
-    @include responsive(md) {
+    @include responsive(ml) {
         padding-left: 0;
+    }
+
+    @include responsive(md) {
         text-align: center;
         margin-top: 30px;
     }
@@ -108,12 +111,17 @@
 }
 
 .reviews__slide {
-    padding: 75px 45px;
+    padding: 71px 53px;
     height: 449px;
     transition: .3s ease;
 
     @include responsive(ml) {
         padding: 25px 30px;
+    }
+
+    @include responsive(sm) {
+        padding: 20px;
+        height: auto;
     }
 
     @include responsive(xs) {

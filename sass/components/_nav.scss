@@ -1,5 +1,4 @@
 // SubNav
-
 .subNav {
     list-style: none;
     display: flex;
@@ -35,7 +34,6 @@
 }
 
 .subNav__link-res {
-    
     position: relative;
     margin-right: 15px;
 
@@ -75,7 +73,6 @@
     }
 }
 
-
 // SubNav dropdown menu
 .subNav__link-res-drop,
 .subNav__link-acc-drop {
@@ -109,9 +106,7 @@
     }
 }
 
-
 // Big nav
-
 .nav {
     list-style: none;
     display: flex;
@@ -130,25 +125,27 @@
     padding: 21px 41px 27px 41px;
     position: relative;
 
-        &::after {
-            content: '';
-            width: 0;
-            height: 4px;
-            position: absolute;
-            opacity: 0;
-            transition: .5s ease;
-            background-image: $gradient;
-            bottom: -16px;
-            left: 0;
-        }
-
-        &:hover {
+        &:not(:last-child) {
             &::after {
-                opacity: 1;
-                width: 100%;
+                content: '';
+                width: 0;
+                height: 4px;
+                position: absolute;
+                opacity: 0;
+                transition: .5s ease;
+                background-image: $gradient;
+                bottom: -16px;
+                left: 0;
             }
-            .navLink {
-                color: $yellow;
+    
+            &:hover {
+                &::after {
+                    opacity: 1;
+                    width: 100%;
+                }
+                .navLink {
+                    color: $yellow;
+                }
             }
         }
 
@@ -173,15 +170,29 @@
     }
 }
 
-
 // Small nav
-
-.miniNav {
+.miniNav-container {
     position: absolute;
-    top: 40%;
-    right: 50px;
+    top: 50%;
+    right: 35px;
     transform: translateY(-50%);
     display: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 300;
+
+    &:hover {
+        .miniNav-icon {
+            &::before {
+                top: 13px;
+            }
+
+            &::after {
+                bottom: 14px; 
+            }
+        }
+    }
 
     @include responsive(ml) {
         display: block;
@@ -196,6 +207,7 @@
     width: 35px;
     height: 2px;
     background-color: $white;
+    transition: all .2s ease-in-out;
 
     &::before {
         content: '';
@@ -216,9 +228,93 @@
     }
 }
 
+.miniNav-icon-rotate {
+        transform: rotate(135deg) !important;
+        
+        &::before {
+            visibility: hidden;
+        }
+
+        &::after {
+            transform: rotate(90deg) !important;
+            bottom: 2px !important;
+        }
+}
+
+.d-show {
+    right: 0 !important;
+}
+
+.miniNav {
+    position: fixed;
+    background-color: $color-primary;
+    height: 100%;
+    width: 50%;
+    right: -100%;
+    top: 0;
+    padding: 50px;
+    z-index: 200;
+    transition: .3s ease-in-out;
+
+    @include responsive(sm) {
+        width: 100%;
+    }
+}
+
+.miniNav-list {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.miniNav-item {
+    padding: 20px 0;
+}
+
+.miniNav-link {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        color: $white;
+        display: block;
+        letter-spacing: 1px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 4px;
+            position: absolute;
+            opacity: 0;
+            transition: .5s ease;
+            background-image: $gradient;
+            bottom: -16px;
+            left: 0;
+        }
+    
+        &:hover {
+            &::after {
+                opacity: 1;
+                width: 100%;
+            }
+            .navLink {
+                color: $yellow;
+            }
+        }
+    }
+}
 
 // Sticky navbar 
-
 .sticky {
     position: fixed;
     top: 0;

@@ -84,7 +84,7 @@
 
 .spotlight__slide {
     background-color: $light-blue2;
-    padding: 27px 25px 42px;
+    padding: 22px 17px 44px 29px;
     height: 404px;
     transition: .3s ease;
 
@@ -124,7 +124,6 @@
             display: block;
             transition: .3s ease;
         }
-
     }
 }
 
@@ -156,6 +155,10 @@
     color: $color-primary-light;
     display: block;
     font-family: $rfba;
+
+    @media only screen and (max-width: 390px) {
+        font-size: 25px;
+    }
 }
 
 .spotlight-color {

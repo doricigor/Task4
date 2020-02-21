@@ -10,13 +10,11 @@ $(document).ready(function() {
         $(num).slideDown().siblings().slideUp();
     });
 
-
     // Slick slider for Categories 
-
     $('.slider__wrap').slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -50,13 +48,11 @@ $(document).ready(function() {
         ]
       });
 
-
       // Slick slider for products
-      
       $('.spotlight__wrap').slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -82,11 +78,10 @@ $(document).ready(function() {
       });
 
       // Slick slider for reviews
-
       $('.reviews__wrap').slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -105,7 +100,6 @@ $(document).ready(function() {
       });
 
       // Slick slider for clients
-
       $('.clients__wrap').slick({
         dots: true,
         arrows: true,
@@ -153,11 +147,10 @@ $(document).ready(function() {
       });
 
       // Slick slider for featured
-
       $('.featured__wrap').slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -172,7 +165,6 @@ $(document).ready(function() {
       });
 
       // Sticky on scroll
-
       window.onscroll = function() {
         toggleSticky();
       }
@@ -188,5 +180,15 @@ $(document).ready(function() {
           navbar.classList.remove("sticky");
         }
       }
+
+      // Mini navMenu
+      const navCont = document.querySelector('.miniNav-container');
+      const miniNav = document.querySelector('.miniNav');
+      const navIcon = document.querySelector('.miniNav-icon')
+
+      navCont.addEventListener('click', () => {
+        miniNav.classList.toggle('d-show');
+        navIcon.classList.toggle('miniNav-icon-rotate');
+      });
 
 });

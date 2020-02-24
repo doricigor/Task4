@@ -4,7 +4,6 @@ $(document).ready(function() {
     $('.tabsList__tabs a').on('click', function (event) {
         event.preventDefault();
         const num = $(this).attr('href');
-        console.log(num);
         $('.tab-active').removeClass('tab-active');
         $(this).addClass('tab-active');
         $(num).slideDown().siblings().slideUp();
@@ -14,7 +13,7 @@ $(document).ready(function() {
     $('.slider__wrap').slick({
         dots: true,
         arrows: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
         speed: 300,
@@ -41,8 +40,7 @@ $(document).ready(function() {
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false
+              slidesToScroll: 1
             }
           }
         ]
@@ -70,8 +68,7 @@ $(document).ready(function() {
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false
+              slidesToScroll: 1
             }
           }
         ]
@@ -92,8 +89,7 @@ $(document).ready(function() {
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false
+              slidesToScroll: 1
             }
           }
         ]
@@ -136,11 +132,10 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 576,
+            breakpoint: 575,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false
+              slidesToScroll: 1
             }
           }
         ]
@@ -153,15 +148,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         infinite: false,
-        speed: 300,
-        responsive: [
-          {
-            breakpoint:576,
-            settings: {
-              dots: false
-            }
-          }
-        ]
+        speed: 300
       });
 
       // Sticky on scroll

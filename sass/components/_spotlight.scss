@@ -1,65 +1,80 @@
 .spotlight {
-    margin-top: 137px;
+    padding-top: 137px;
     overflow: hidden;
 
     @include responsive(ml) {
-        margin-top: 100px;
+        padding-top: 100px;
     }
 
     @include responsive(xs) {
-        margin-top: 50px;
+        padding-top: 50px;
     }
 
     .slick-prev {
-        top: -89px;
-        right: 86px;
+        top: -108px;
+        right: 103px;
 
         @include responsive(ml) {
             right: 106px;
         }
 
         @include responsive(sm) {
-            top: -45px;
-            right: 276px;
+            top: -60px;
+            right: 268px;
         }
 
         @include responsive(xs) {
             right: auto;
-            left: 40%;
-            top: -56px;
+            left: 25%;
+            top: -71px;
+        }
+
+        @include responsive(us) {
+            left: 20%;
         }
     }
 
     .slick-next {
-        top: -89px;
-        right: 3px;
+        top: -108px;
+        right: -6px;
 
         @include responsive(ml) {
-            right: 11px;
+            right: -13px;
         }
 
         @include responsive(sm) {
-            top: -45px;
-            right: 176px;
+            top: -60px;
+            right: 143px;
         }
 
         @include responsive(xs) {
-            top: -56px;
-            right: 35%;
+            top: -71px;
+            right: auto;
+            left: 75%;
+        }
+
+        @include responsive(us) {
+            left: 80%;
         }
     }
 
     .slick-dots {
-        top: -83px;
-        right: 45px;
+        top: -87px;
+        right: 69px;
+
+        @include responsive(ml) {
+            right: 52px;
+        }
 
         @include responsive(sm) {
-            top: -39px;
-            right: 209px;
+            top: -40px;
+            right: 208px;
         }
 
         @include responsive(xs) {
-            right: 181px;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
             top: -51px;
         }
     }

@@ -197,6 +197,12 @@
             font-size: 18px;   
         }
     }
+
+    &:hover {
+        color: $color-footer-light;
+        transition: .3s ease;
+        text-decoration: underline;
+    }
 }
 
 .tabsWrap__btn {

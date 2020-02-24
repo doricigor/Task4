@@ -11,15 +11,15 @@
     }
 
     .slick-prev {
-        top: -68px;
-        right: 86px;
+        top: -86px;
+        right: 102px;
 
         @include responsive(md) {
-            top: -83px;
+            top: -97px;
         }
 
         @include responsive(sm) {
-            top: -42px;
+            top: -56px;
             right: 262px;
         }
 
@@ -27,41 +27,56 @@
             right: auto;
             left: 40%;
         }
+
+        @include responsive(ss) {
+            left: 35%;
+        }
+
+        @include responsive(us) {
+            left: 30%;
+        }
     }
 
     .slick-next {
-        top: -68px;
-        right: 3px;
+        top: -86px;
+        right: -6px;
 
         @include responsive(md) {
-            top: -83px;
+            top: -97px;
         }
 
         @include responsive(sm) {
-            right: 183px;
-            top: -42px;
+            right: 149px;
+            top: -56px;
         }
 
         @include responsive(xs) {
-            right: 35%;
+            right: auto;
+            left: 60%;
+        }
+
+        @include responsive(ss) {
+            left: 65%;
+        }
+
+        @include responsive(us) {
+            left: 70%;
         }
     }
 
     .slick-dots {
-        top: -63px;
-        right: 45px;
+        top: -65px;
+        right: 69px;
 
         @include responsive(md) {
             top: -76px;
         }
 
         @include responsive(sm) {
-            right: 226px;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
             top: -36px;
-        }
-
-        @include responsive(xs) {
-            right: 241px;
         }
     }
 

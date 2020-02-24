@@ -1,13 +1,9 @@
 .about {
     max-width: 1620px;
-    margin-top: 118px;
+    padding-top: 118px;
 
     @include responsive(lg) {
-        margin-top: 30px;
-    }
-
-    @include responsive(sm) {
-        margin-top: 0;
+        padding-top: 0;
     }
 }
 
@@ -80,6 +76,10 @@
 
     @include responsive(md) {
         margin: 0 auto;
+    }
+
+    @include responsive(xs) {
+        padding: 0 20px;
     }
 }
 

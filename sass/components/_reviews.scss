@@ -1,5 +1,5 @@
 .reviews {
-    padding-top: 118px;
+    padding-top: 116px;
     position: relative;
     overflow: hidden;
 
@@ -8,58 +8,65 @@
     }
 
     .slick-prev {
-        bottom: 35px;
-        left: -245px;
+        bottom: 50px;
+        left: -260px;
 
         @include responsive(ml) {
             left: -185px;
         }
 
         @include responsive(md) {
-            top: -50px;
+            top: -64px;
             left: 300px;
             bottom: auto;
         }
         
         @include responsive(sm) {
-            left: 221px;
+            left: 205px;
         }
 
         @include responsive(xs) {
-            left: 40%;
+            left: 32%;
+        }
+
+        @include responsive(us) {
+            left: 25%;
         }
     }
 
     .slick-next {
-        bottom: 35px;
-        left: -170px;
+        bottom: 50px;
+        left: -157px;
 
         @include responsive(ml) {
-            left: -103px;
+            left: -92px;
         }
 
         @include responsive(md) {
-            top: -50px;
+            top: -64px;
             bottom: auto;
             left: 394px;
         }
 
         @include responsive(sm) {
-            left: 300px;
+            left: 315px;
         }
 
         @include responsive(xs) {
-            right: 35%;
-            left: auto;
+            left: 68%;
+        }
+
+        @include responsive(us) {
+            left: 75%;
         }
     }
 
     .slick-dots {
-        bottom: 37px;
+        bottom: 56px;
         left: -209px;
 
         @include responsive(ml) {
-            left: -145px;
+            left: -139px;
         }
 
         @include responsive(md) {
@@ -70,6 +77,11 @@
 
         @include responsive(sm) {
             left: 258px;
+        }
+
+        @include responsive(xs) {
+            left: 50%;
+            top: -43px;
         }
     }
 }
@@ -112,7 +124,7 @@
 
 .reviews__slide {
     padding: 71px 53px;
-    height: 449px;
+    min-height: 449px;
     transition: .3s ease;
 
     @include responsive(ml) {

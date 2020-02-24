@@ -6,49 +6,53 @@
     }
 
     .slick-prev {
-        left: 49%;
+        left: 47%;
 
-        @include responsive(ml) {
-            left: 47%;
+        @include responsive(lg) {
+            left: 46%;
         }
 
-        @include responsive(md) {
+        @include responsive(ml) {
             left: 45%;
         }
 
+        @include responsive(md) {
+            left: 42%;
+        }
+
         @include responsive(sm) {
-            left: 43%;
+            left: 40%;
         }
 
         @include responsive(xs) {
-            left: 40%;
+            left: 40px;
         }
     }
 
     .slick-next {
         left: 53%;
 
+        @include responsive(lg) {
+            left: 54%;
+        }
+
         @include responsive(ml) {
             left: 55%;
         }
 
         @include responsive(md) {
-            left: 57%;
-        }
-
-        @include responsive(sm) {
-            left: 59%;
+            left: 60%;
         }
 
         @include responsive(xs) {
-            right: 35%;
+            right: -6px;
             left: auto;
         }
     }
 
     .slick-dots {
-        bottom: -83px;
-        left: 51%;
+        bottom: -79px;
+        left: 50%;
     }
 }
 
@@ -59,7 +63,7 @@
 }
 
 .slider__fluid {
-    height: 800px;
+    min-height: 800px;
     overflow: hidden;
 
     @include responsive(md) {
@@ -81,12 +85,17 @@
     position: relative;
     width: 450px;
     min-width: 250px;
-    height: 700px;
+    min-height: 700px;
     flex: 1;
     transition: .3s ease;
 
     @include responsive(lg) {
         height: auto;
+        min-height: 615px;
+    }
+
+    @include responsive(xs) {
+        min-height: 530px;    
     }
 
     &::before {
@@ -220,9 +229,12 @@
         margin-bottom: 0;
     }
 
+    @include responsive(xs) {
+        height: auto;    
+    }
+
     @include responsive(sx) {
         margin-top: 0;
-        height: auto;
     }
 }
 
@@ -238,8 +250,14 @@
         height: 90px;       
     }
 
+    
     @include responsive(sx) {
         margin-bottom: 0;
+    }
+
+    @include responsive(xs) {
+        margin-bottom: 30px;   
+        height: auto;   
     }
 }
 
@@ -258,6 +276,12 @@
     @include responsive(sx) {
         margin-top: 0;
     }
+
+    @include responsive(xs) {
+        margin-bottom: 30px;     
+        height: auto; 
+    }
+
 }
 
 .slider__slide-content-bottom {

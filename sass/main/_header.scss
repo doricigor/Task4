@@ -33,12 +33,14 @@
     border-bottom: .5px solid $color-primary-light;
     padding-bottom: 16px;
     position: relative;
+    transition: .2s ease-in-out;
 }
 
 .header__nav-container {
     display: flex;
     justify-content: space-between;
     padding-right: 9px;
+    position: relative;
 
     @include responsive(ml) {
         justify-content: flex-start;
